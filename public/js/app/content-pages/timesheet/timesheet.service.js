@@ -11,7 +11,7 @@ export var TimesheetService = (function () {
     }
     TimesheetService.prototype.getEntries = function () {
         var _this = this;
-        return this.http.get('http://wage-calculator-v2.herokuapp.com/timesheet-entry') //should be changed after deploying the app
+        return this.http.get('http://wage-calculator-v2.herokuapp.com/timesheet-entry')
             .map(function (response) {
             return _this.entries = _this.transformEntry(response.json().obj);
         })
@@ -32,7 +32,7 @@ export var TimesheetService = (function () {
     };
     TimesheetService.prototype.refreshEntries = function () {
         var _this = this;
-        return this.http.post('http://wage-calculator-v2.herokuapp.com//timesheet-entry/refresh', '')
+        return this.http.post('http://wage-calculator-v2.herokuapp.com/timesheet-entry/refresh', '')
             .map(function (response) {
             _this.entries = _this.transformEntry(response.json().obj);
             console.log(_this.entries);
