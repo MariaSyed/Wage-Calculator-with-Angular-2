@@ -1,0 +1,24 @@
+.view {
+    margin-left: 50px;
+    padding: 20px!important;
+    border-radius: 30px!important;
+}
+
+#titleBox {
+    display: flex;
+    width: 360px;
+    height: 200px;
+    margin: 200px auto;
+    border-radius: 25px;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    align-items: center;
+    justify-content: center;
+}
+
+#mainTitle {
+    font-family: 'PT sans', sans-serif!important;
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: center;
+}

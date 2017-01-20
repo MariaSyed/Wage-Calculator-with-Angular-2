@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding-top: 50px;
+    font-family: Roboto !important;
+    background: #4ca1af;
+    /* fallback for old browsers */
+
+    background: -webkit-linear-gradient(to left, #4ca1af, #c4e0e5);
+    /* Chrome 10-25, Safari 5.1-6 */
+
+    background: linear-gradient(to left, #4ca1af, #c4e0e5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.loader-container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.loader {
+  margin: 20px auto;
+  border-radius: 50%;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+.loader-large {
+  width: 120px;
+  height: 120px;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #000;
+}
+
+.loader-small {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #e5e5e5;
+  border-top: 10px solid #00f;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

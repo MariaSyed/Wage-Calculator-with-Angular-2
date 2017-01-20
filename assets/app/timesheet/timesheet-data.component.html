@@ -1,0 +1,11 @@
+
+<td>{{entry.name}}</td>
+<td>{{entry.id}}</td>
+<td>{{entry.date}}</td>
+<td>{{entry.startTime}}</td>
+<td>{{entry.endTime}}</td>
+<td>${{entry.dailyWage}}</td>
+<td ><a class="ts-btn btn btn-warning" (click)="onEdit()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+    <form id="delete-btn" (ngSubmit)="onDelete()" onsubmit="return confirm('Do you really want to delete the entry?\nIt will be lost forever!...unless you refresh')" >
+    <button class="ts-btn btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+    </form></td>

@@ -1,0 +1,43 @@
+<wc-header></wc-header>
+<hr>
+<p><br></p>
+
+<form id="refresh-btn" (ngSubmit)="onRefresh()">
+    <button class="btn btn-info" type="submit">Refresh! <i class="fa fa-refresh" aria-hidden="true"></i></button>
+</form>
+<p></p>
+
+<h2>Time Sheet of Employees</h2>
+<p class="p-wc">Here is your rendered csv file. You can add further entries for <strong>this</strong> month by hitting the add button below and filling in the form.<br> You can also refresh by clicking the refresh button i.e. all data is removed and added back straight from the
+    csv file.</p>
+
+<a id="toggle-form-btn" class="btn btn-danger"(click)="toggleForm()"><i class="fa fa-plus" aria-hidden="true"></i>
+ Add New Entry</a>
+
+<wc-timesheet-input class="ts-input" style="display:none;"></wc-timesheet-input>
+
+<div [ngSwitch]="loading">
+  <div *ngSwitchCase="false">
+    <div class="table-responsive">
+        <table>
+          <tr>
+              <th>Name</th>
+              <th>Id</th>
+              <th>Date</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+              <th>Daily Wage</th>
+              <th id="th-edit-delete">Edit/Delete</th>
+          </tr>
+          <tr *ngFor="let entry of entries" wc-timesheet-data [entry]="entry"></tr>
+        </table>
+    </div>
+</div>
+  <div *ngSwitchCase="true">
+    <table>
+      <div class="loader-container">
+        <h2>Getting timesheet entries...</h2>
+        <loading-indicator></loading-indicator>
+    </div>
+    </table>
+  </div>
