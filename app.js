@@ -41,6 +41,11 @@ app.use(function (req, res, next) {
 app.use(function (req, res, next) {
     return res.render('index');
 });
+
+app.get("*", function(req, res){
+  res.render('index');
+})
+
 module.exports = app;
 // app.listen(3000, function(){
 //   console.log("Server started on 3000");
