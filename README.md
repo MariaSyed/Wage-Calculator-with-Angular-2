@@ -3,7 +3,6 @@
 MEAN stack application to calculate employee salaries for the month using data from a csv file. Entries can also be added, uploaded and deleted.  
 
 ## How to Use (Un-deployed Version)
-
 ### Install Mongodb
 * Download installation files from: https://docs.mongodb.com/manual/administration/install-community/
 * Install in root directory 
@@ -12,10 +11,11 @@ MEAN stack application to calculate employee salaries for the month using data f
 https://nodejs.org/en/download/
 
 ### Set up environment 
-* Open terminal (or Command Prompt) and run `npm install` to install packages
-* On terminal run `npm run build` and keep the process running
-* Open mongod.exe file from bin folder or cd into mongodb's bin folder and run `mongod`
-* Open new terminal window and run `npm start` and keep the process running
+1. Navigate into the folder (in the command line/ terminal)
+2. Run `npm install` to install all required dependencies
+3. Run `npm run build` to run the development build script => Keep this process running! It recompiles the files upon changes.
+4. Run `./bin/mongod` to start mongodb server
+5. Run `npm start` in a new command line/ terminal window => Keep this process running as well. 
 
 ### Use Application
 Go to: http://localhost:3000 
