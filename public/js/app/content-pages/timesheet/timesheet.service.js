@@ -11,7 +11,7 @@ export var TimesheetService = (function () {
     }
     TimesheetService.prototype.getEntries = function () {
         var _this = this;
-        return this.http.get('http://localhost:3000/timesheet-entry') //should be changed after deploying the app
+        return this.http.get('http://wage-calculator-v2.herokuapp.com/timesheet-entry') //should be changed after deploying the app
             .map(function (response) {
             return _this.entries = _this.transformEntry(response.json().obj);
         })
@@ -21,7 +21,7 @@ export var TimesheetService = (function () {
         var _this = this;
         var body = JSON.stringify(entry);
         var headers = new Headers({ 'Content-Type': 'application/json' });
-        return this.http.post('http://localhost:3000/timesheet-entry', body, { headers: headers })
+        return this.http.post('http://wage-calculator-v2.herokuapp.com/timesheet-entry', body, { headers: headers })
             .map(function (response) {
             var result = response.json();
             var entry = new Entry(result.obj.name, result.obj.id, result.obj.date, result.obj.startTime, result.obj.endTime, result.obj.dailyWage);
@@ -32,7 +32,7 @@ export var TimesheetService = (function () {
     };
     TimesheetService.prototype.refreshEntries = function () {
         var _this = this;
-        return this.http.post('http://localhost:3000/timesheet-entry/refresh', '')
+        return this.http.post('http://wage-calculator-v2.herokuapp.com//timesheet-entry/refresh', '')
             .map(function (response) {
             _this.entries = _this.transformEntry(response.json().obj);
             console.log(_this.entries);
@@ -46,7 +46,7 @@ export var TimesheetService = (function () {
     TimesheetService.prototype.updateEntry = function (entry) {
         var body = JSON.stringify(entry);
         var headers = new Headers({ 'Content-Type': 'application/json' });
-        return this.http.patch('http://localhost:3000/timesheet-entry/' + entry.entryId, body, { headers: headers })
+        return this.http.patch('http://wage-calculator-v2.herokuapp.com/timesheet-entry/' + entry.entryId, body, { headers: headers })
             .map(function (response) {
             entry.dailyWage = response.json().obj.dailyWage.toFixed(2);
             return response.json();
@@ -55,7 +55,7 @@ export var TimesheetService = (function () {
     };
     TimesheetService.prototype.deleteEntry = function (entry) {
         this.entries.splice(this.entries.indexOf(entry), 1);
-        return this.http.delete('http://localhost:3000/timesheet-entry/' + entry.entryId)
+        return this.http.delete('http://wage-calculator-v2.herokuapp.com/timesheet-entry/' + entry.entryId)
             .map(function (response) { return response.json(); })
             .catch(function (error) { return Observable.throw(error.json()); });
     };

@@ -14,7 +14,7 @@ export class SalaryService {
 
     getSalaries() {
         // return this.salaries;
-        return this.http.get('http://localhost:3000/salary')//should be changed after deploying the app
+        return this.http.get('http://wage-calculator-v2.herokuapp.com/salary')//should be changed after deploying the app
             .map((response: Response) => {
               return this.salaries = this.transformSalary(response.json().obj);
             })
@@ -23,7 +23,7 @@ export class SalaryService {
 
 
     calculateSalaries(){
-      return this.http.post('http://localhost:3000/salary',"")
+      return this.http.post('http://wage-calculator-v2.herokuapp.com/salary',"")
         .map((response: Response) => {
           return this.salaries = this.transformSalary(response.json().obj);
         })

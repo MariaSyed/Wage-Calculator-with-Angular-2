@@ -13,7 +13,7 @@ export class TimesheetService {
     constructor(private http: Http) {}
 
     getEntries() {
-     return this.http.get('http://localhost:3000/timesheet-entry')//should be changed after deploying the app
+     return this.http.get('http://wage-calculator-v2.herokuapp.com/timesheet-entry')//should be changed after deploying the app
        .map((response: Response) => {
          return this.entries = this.transformEntry(response.json().obj);
        })
@@ -23,7 +23,7 @@ export class TimesheetService {
     addEntry(entry: Entry) {
       const body = JSON.stringify(entry);
       const headers = new Headers({'Content-Type': 'application/json'});
-      return this.http.post('http://localhost:3000/timesheet-entry', body, {headers: headers})
+      return this.http.post('http://wage-calculator-v2.herokuapp.com/timesheet-entry', body, {headers: headers})
           .map((response: Response) => {
               const result = response.json();
               const entry = new Entry(result.obj.name, result.obj.id, result.obj.date, result.obj.startTime, result.obj.endTime, result.obj.dailyWage);
@@ -34,7 +34,7 @@ export class TimesheetService {
     }
 
     refreshEntries(){
-      return this.http.post('http://localhost:3000/timesheet-entry/refresh','')
+      return this.http.post('http://wage-calculator-v2.herokuapp.com//timesheet-entry/refresh','')
         .map((response: Response) =>{
           this.entries = this.transformEntry(response.json().obj);
           console.log(this.entries);
@@ -50,7 +50,7 @@ export class TimesheetService {
     updateEntry(entry: Entry) {
       const body = JSON.stringify(entry);
       const headers = new Headers({'Content-Type': 'application/json'});
-      return this.http.patch('http://localhost:3000/timesheet-entry/' + entry.entryId, body, {headers: headers})
+      return this.http.patch('http://wage-calculator-v2.herokuapp.com/timesheet-entry/' + entry.entryId, body, {headers: headers})
           .map((response: Response) => {
             entry.dailyWage = response.json().obj.dailyWage.toFixed(2);
             return response.json()}
@@ -60,7 +60,7 @@ export class TimesheetService {
 
     deleteEntry(entry: Entry) {
       this.entries.splice(this.entries.indexOf(entry), 1);
-      return this.http.delete('http://localhost:3000/timesheet-entry/' + entry.entryId)
+      return this.http.delete('http://wage-calculator-v2.herokuapp.com/timesheet-entry/' + entry.entryId)
           .map((response: Response) => response.json())
           .catch((error: Response) => Observable.throw(error.json()));
     }
