@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TimesheetService } from './timesheet/timesheet.service';
-import { SalaryService } from './salary/salary.service';
+import { TimesheetService } from './content-pages/timesheet/timesheet.service';
+import { SalaryService } from './content-pages/salary/salary.service';
 
 @Component({
   selector: 'wc-app',
