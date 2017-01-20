@@ -13,8 +13,8 @@ var timesheetRoutes = require("./routes/timesheet"),
     salaryRoutes  = require('./routes/salaries'),
     indexRoutes = require('./routes/index');
 
-var url = process.env.DATABASEURL || "mongodb://localhost/company";
-mongoose.connect(url);
+// var url = process.env.DATABASEURL || "mongodb://localhost/company";
+mongoose.connect("mongodb://maria:tree@ds139428.mlab.com:39428/wagecalculator");
 
 app.set("view engine","hbs");
 //app.set('views', path.join(__dirname, 'views'));
