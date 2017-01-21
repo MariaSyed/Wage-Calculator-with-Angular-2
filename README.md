@@ -2,7 +2,9 @@
 
 Application to calculate employee salaries for the month using data from a csv file. Entries can also be added, uploaded and deleted.  
 
-## How to Use (Development Version)
+Deployed app can be used at: https://wage-calculator-v2.herokuapp.com/
+
+## How to Run Locally
 ### Install Mongodb
 * Download installation files from: https://docs.mongodb.com/manual/administration/install-community/
 * Install in root directory
@@ -20,8 +22,7 @@ https://nodejs.org/en/download/
 ### Use Application
 Go to: http://localhost:3000
 
-## How to Use (Deployed Version)
-* Go to: https://wage-calculator-v2.herokuapp.com/
+## How to Use
 * Click on 'See Timesheet' to view timesheet
 * Add, Update, Delete, Refresh by using their respective buttons
 * Click 'See Salaries' to view salaries
