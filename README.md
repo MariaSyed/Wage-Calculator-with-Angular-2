@@ -22,10 +22,19 @@ https://nodejs.org/en/download/
 ### Use Application
 Go to: http://localhost:3000
 
-## How to Use
+## How to Use Applicaton
 * Click on 'See Timesheet' to view timesheet
-* Add, Update, Delete, Refresh by using their respective buttons
-* Click 'See Salaries' to view salaries
+
+* Fill in the form on the page and click Save to add new entry.
+(*Note: data must be of certain format to be added successfully*)
+
+* Click on the icons next to each table data to edit/delete entry.
+
+* Click on the refresh button (top right) to refresh entries.
+(*Note: All changes will be gone*)
+
+* Click 'See Salaries' (navigation bar) to view salaries
+
 * Click 'Calculate' to calculate new salaries based on current timesheet
 
 ## What Was Used
@@ -56,13 +65,8 @@ Go to: http://localhost:3000
 
 * After data is read, daily wage for each entry is calculated and added as a new field to each entry which can be viewed at '/timesheet'
 
-* New entries can be added to collection by filling in the form on the page.  
-(*Note: data must be of certain format to be added successfully*)
 
-* Entries can be edited or deleted from the table by clicking on the icons next to each table data.
-
-* Collection can also be refreshed by clicking on the refresh button (top right). This means all data from the time sheet is removed and data is read from "HourList201403.csv" again to re-populate collection. All new entries or changes will be
- lost.
+* Upon refresh, all data from the time sheet is removed and data is read from "HourList201403.csv" again to re-populate collection.
 
 * On Salaries page, clicking on "Calculate Salary" prompts the database to group the entries according to their id and summing their daily wages to get salary for the month.
 
