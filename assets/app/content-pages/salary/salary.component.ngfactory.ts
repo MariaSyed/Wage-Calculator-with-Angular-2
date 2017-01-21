@@ -16,19 +16,17 @@ import * as import8 from './salary.service';
 import * as import9 from '@angular/core/src/metadata/view';
 import * as import10 from '@angular/core/src/linker/component_factory';
 import * as import11 from '../content-pages.css.shim';
-import * as import12 from '../header.component';
-import * as import13 from '@angular/forms/src/directives/ng_form';
-import * as import14 from '@angular/forms/src/directives/ng_control_status';
-import * as import15 from '@angular/common/src/directives/ng_switch';
-import * as import16 from '../header.component.ngfactory';
-import * as import17 from '@angular/core/src/linker/template_ref';
-import * as import18 from '@angular/forms/src/directives/control_container';
-import * as import19 from '@angular/common/src/directives/ng_for';
-import * as import20 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import21 from './salary-data.component';
-import * as import22 from './salary-data.component.ngfactory';
-import * as import23 from '../loading.component';
-import * as import24 from '../loading.component.ngfactory';
+import * as import12 from '@angular/forms/src/directives/ng_form';
+import * as import13 from '@angular/forms/src/directives/ng_control_status';
+import * as import14 from '@angular/common/src/directives/ng_switch';
+import * as import15 from '@angular/core/src/linker/template_ref';
+import * as import16 from '@angular/forms/src/directives/control_container';
+import * as import17 from '@angular/common/src/directives/ng_for';
+import * as import18 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import19 from './salary-data.component';
+import * as import20 from './salary-data.component.ngfactory';
+import * as import21 from '../loading.component';
+import * as import22 from '../loading.component.ngfactory';
 var renderType_SalaryComponent_Host:import0.RenderComponentType = (null as any);
 class _View_SalaryComponent_Host0 extends import1.AppView<any> {
   _el_0:any;
@@ -66,43 +64,38 @@ const styles_SalaryComponent:any[] = [import11.styles];
 var renderType_SalaryComponent:import0.RenderComponentType = (null as any);
 class _View_SalaryComponent0 extends import1.AppView<import3.SalaryComponent> {
   _el_0:any;
-  /*private*/ _appEl_0:import2.AppElement;
-  _HeaderComponent_0_4:import12.HeaderComponent;
   _text_1:any;
-  _el_2:any;
-  _text_3:any;
-  _el_4:any;
-  _text_5:any;
-  _text_6:any;
-  _el_7:any;
-  _NgForm_7_3:import13.NgForm;
-  _ControlContainer_7_4:any;
-  _NgControlStatusGroup_7_5:import14.NgControlStatusGroup;
+  _text_2:any;
+  _el_3:any;
+  _NgForm_3_3:import12.NgForm;
+  _ControlContainer_3_4:any;
+  _NgControlStatusGroup_3_5:import13.NgControlStatusGroup;
+  _text_4:any;
+  _el_5:any;
+  _el_6:any;
+  _text_7:any;
   _text_8:any;
-  _el_9:any;
-  _text_10:any;
-  _text_11:any;
+  _text_9:any;
+  _el_10:any;
+  _el_11:any;
   _text_12:any;
   _el_13:any;
-  _el_14:any;
+  _text_14:any;
   _text_15:any;
   _el_16:any;
+  _NgSwitch_16_3:import14.NgSwitch;
   _text_17:any;
-  _text_18:any;
-  _el_19:any;
-  _NgSwitch_19_3:import15.NgSwitch;
-  _text_20:any;
-  _anchor_21:any;
-  /*private*/ _appEl_21:import2.AppElement;
-  _TemplateRef_21_5:any;
-  _NgSwitchCase_21_6:import15.NgSwitchCase;
+  _anchor_18:any;
+  /*private*/ _appEl_18:import2.AppElement;
+  _TemplateRef_18_5:any;
+  _NgSwitchCase_18_6:import14.NgSwitchCase;
+  _text_19:any;
+  _anchor_20:any;
+  /*private*/ _appEl_20:import2.AppElement;
+  _TemplateRef_20_5:any;
+  _NgSwitchCase_20_6:import14.NgSwitchCase;
+  _text_21:any;
   _text_22:any;
-  _anchor_23:any;
-  /*private*/ _appEl_23:import2.AppElement;
-  _TemplateRef_23_5:any;
-  _NgSwitchCase_23_6:import15.NgSwitchCase;
-  _text_24:any;
-  _text_25:any;
   /*private*/ _expr_3:any;
   /*private*/ _expr_4:any;
   /*private*/ _expr_5:any;
@@ -117,55 +110,47 @@ class _View_SalaryComponent0 extends import1.AppView<import3.SalaryComponent> {
   }
   createInternal(rootSelector:string):import2.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'wc-header',(null as any));
-    this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
-    var compView_0:any = import16.viewFactory_HeaderComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._HeaderComponent_0_4 = new import12.HeaderComponent();
-    this._appEl_0.initComponent(this._HeaderComponent_0_4,[],compView_0);
-    compView_0.create(this._HeaderComponent_0_4,[],(null as any));
-    this._text_1 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_2 = this.renderer.createElement(parentRenderNode,'hr',(null as any));
-    this._text_3 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._el_4 = this.renderer.createElement(parentRenderNode,'h2',(null as any));
-    this._text_5 = this.renderer.createText(this._el_4,'Employee Salaries for the month',(null as any));
-    this._text_6 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_7 = this.renderer.createElement(parentRenderNode,'form',(null as any));
-    this._NgForm_7_3 = new import13.NgForm((null as any),(null as any));
-    this._ControlContainer_7_4 = this._NgForm_7_3;
-    this._NgControlStatusGroup_7_5 = new import14.NgControlStatusGroup(this._ControlContainer_7_4);
-    this._text_8 = this.renderer.createText(this._el_7,'\n    ',(null as any));
-    this._el_9 = this.renderer.createElement(this._el_7,'button',(null as any));
-    this.renderer.setElementAttribute(this._el_9,'class','btn btn-success');
-    this.renderer.setElementAttribute(this._el_9,'id','calculate-btn');
-    this.renderer.setElementAttribute(this._el_9,'type','submit');
-    this._text_10 = this.renderer.createText(this._el_9,'Calculate Salary!',(null as any));
-    this._text_11 = this.renderer.createText(this._el_7,'\n',(null as any));
+    this._el_0 = this.renderer.createElement(parentRenderNode,'h2',(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'Employee Salaries for the month',(null as any));
+    this._text_2 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._el_3 = this.renderer.createElement(parentRenderNode,'form',(null as any));
+    this._NgForm_3_3 = new import12.NgForm((null as any),(null as any));
+    this._ControlContainer_3_4 = this._NgForm_3_3;
+    this._NgControlStatusGroup_3_5 = new import13.NgControlStatusGroup(this._ControlContainer_3_4);
+    this._text_4 = this.renderer.createText(this._el_3,'\n    ',(null as any));
+    this._el_5 = this.renderer.createElement(this._el_3,'button',(null as any));
+    this.renderer.setElementAttribute(this._el_5,'class','btn btn-defalt');
+    this.renderer.setElementAttribute(this._el_5,'id','calculate-btn');
+    this.renderer.setElementAttribute(this._el_5,'type','submit');
+    this._el_6 = this.renderer.createElement(this._el_5,'strong',(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'Calculate Salary!',(null as any));
+    this._text_8 = this.renderer.createText(this._el_3,'\n',(null as any));
+    this._text_9 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._el_10 = this.renderer.createElement(parentRenderNode,'p',(null as any));
+    this._el_11 = this.renderer.createElement(this._el_10,'br',(null as any));
     this._text_12 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     this._el_13 = this.renderer.createElement(parentRenderNode,'p',(null as any));
-    this._el_14 = this.renderer.createElement(this._el_13,'br',(null as any));
+    this.renderer.setElementAttribute(this._el_13,'class','p-wc');
+    this._text_14 = this.renderer.createText(this._el_13,'Click on the Calulate button above to calculate salaries for the month',(null as any));
     this._text_15 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_16 = this.renderer.createElement(parentRenderNode,'p',(null as any));
-    this.renderer.setElementAttribute(this._el_16,'class','p-wc');
-    this._text_17 = this.renderer.createText(this._el_16,'Click on the Calulate button above to calculate salaries for the month',(null as any));
-    this._text_18 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_19 = this.renderer.createElement(parentRenderNode,'div',(null as any));
-    this._NgSwitch_19_3 = new import15.NgSwitch();
-    this._text_20 = this.renderer.createText(this._el_19,'\n  ',(null as any));
-    this._anchor_21 = this.renderer.createTemplateAnchor(this._el_19,(null as any));
-    this._appEl_21 = new import2.AppElement(21,19,this,this._anchor_21);
-    this._TemplateRef_21_5 = new import17.TemplateRef_(this._appEl_21,viewFactory_SalaryComponent1);
-    this._NgSwitchCase_21_6 = new import15.NgSwitchCase(this._appEl_21.vcRef,this._TemplateRef_21_5,this._NgSwitch_19_3);
-    this._text_22 = this.renderer.createText(this._el_19,'\n  ',(null as any));
-    this._anchor_23 = this.renderer.createTemplateAnchor(this._el_19,(null as any));
-    this._appEl_23 = new import2.AppElement(23,19,this,this._anchor_23);
-    this._TemplateRef_23_5 = new import17.TemplateRef_(this._appEl_23,viewFactory_SalaryComponent3);
-    this._NgSwitchCase_23_6 = new import15.NgSwitchCase(this._appEl_23.vcRef,this._TemplateRef_23_5,this._NgSwitch_19_3);
-    this._text_24 = this.renderer.createText(this._el_19,'\n',(null as any));
-    this._text_25 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    var disposable_0:Function = this.renderer.listen(this._el_7,'ngSubmit',this.eventHandler(this._handle_ngSubmit_7_0.bind(this)));
-    var disposable_1:Function = this.renderer.listen(this._el_7,'submit',this.eventHandler(this._handle_submit_7_1.bind(this)));
-    var disposable_2:Function = this.renderer.listen(this._el_7,'reset',this.eventHandler(this._handle_reset_7_2.bind(this)));
-    const subscription_0:any = this._NgForm_7_3.ngSubmit.subscribe(this.eventHandler(this._handle_ngSubmit_7_0.bind(this)));
+    this._el_16 = this.renderer.createElement(parentRenderNode,'div',(null as any));
+    this._NgSwitch_16_3 = new import14.NgSwitch();
+    this._text_17 = this.renderer.createText(this._el_16,'\n  ',(null as any));
+    this._anchor_18 = this.renderer.createTemplateAnchor(this._el_16,(null as any));
+    this._appEl_18 = new import2.AppElement(18,16,this,this._anchor_18);
+    this._TemplateRef_18_5 = new import15.TemplateRef_(this._appEl_18,viewFactory_SalaryComponent1);
+    this._NgSwitchCase_18_6 = new import14.NgSwitchCase(this._appEl_18.vcRef,this._TemplateRef_18_5,this._NgSwitch_16_3);
+    this._text_19 = this.renderer.createText(this._el_16,'\n  ',(null as any));
+    this._anchor_20 = this.renderer.createTemplateAnchor(this._el_16,(null as any));
+    this._appEl_20 = new import2.AppElement(20,16,this,this._anchor_20);
+    this._TemplateRef_20_5 = new import15.TemplateRef_(this._appEl_20,viewFactory_SalaryComponent3);
+    this._NgSwitchCase_20_6 = new import14.NgSwitchCase(this._appEl_20.vcRef,this._TemplateRef_20_5,this._NgSwitch_16_3);
+    this._text_21 = this.renderer.createText(this._el_16,'\n',(null as any));
+    this._text_22 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    var disposable_0:Function = this.renderer.listen(this._el_3,'ngSubmit',this.eventHandler(this._handle_ngSubmit_3_0.bind(this)));
+    var disposable_1:Function = this.renderer.listen(this._el_3,'submit',this.eventHandler(this._handle_submit_3_1.bind(this)));
+    var disposable_2:Function = this.renderer.listen(this._el_3,'reset',this.eventHandler(this._handle_reset_3_2.bind(this)));
+    const subscription_0:any = this._NgForm_3_3.ngSubmit.subscribe(this.eventHandler(this._handle_ngSubmit_3_0.bind(this)));
     this._expr_3 = import7.UNINITIALIZED;
     this._expr_4 = import7.UNINITIALIZED;
     this._expr_5 = import7.UNINITIALIZED;
@@ -178,30 +163,27 @@ class _View_SalaryComponent0 extends import1.AppView<import3.SalaryComponent> {
     this.init([],[
       this._el_0,
       this._text_1,
-      this._el_2,
-      this._text_3,
-      this._el_4,
-      this._text_5,
-      this._text_6,
-      this._el_7,
+      this._text_2,
+      this._el_3,
+      this._text_4,
+      this._el_5,
+      this._el_6,
+      this._text_7,
       this._text_8,
-      this._el_9,
-      this._text_10,
-      this._text_11,
+      this._text_9,
+      this._el_10,
+      this._el_11,
       this._text_12,
       this._el_13,
-      this._el_14,
+      this._text_14,
       this._text_15,
       this._el_16,
       this._text_17,
-      this._text_18,
-      this._el_19,
-      this._text_20,
-      this._anchor_21,
-      this._text_22,
-      this._anchor_23,
-      this._text_24,
-      this._text_25
+      this._anchor_18,
+      this._text_19,
+      this._anchor_20,
+      this._text_21,
+      this._text_22
     ]
     ,[
       disposable_0,
@@ -212,79 +194,78 @@ class _View_SalaryComponent0 extends import1.AppView<import3.SalaryComponent> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import12.HeaderComponent) && (0 === requestNodeIndex))) { return this._HeaderComponent_0_4; }
-    if (((token === import13.NgForm) && ((7 <= requestNodeIndex) && (requestNodeIndex <= 11)))) { return this._NgForm_7_3; }
-    if (((token === import18.ControlContainer) && ((7 <= requestNodeIndex) && (requestNodeIndex <= 11)))) { return this._ControlContainer_7_4; }
-    if (((token === import14.NgControlStatusGroup) && ((7 <= requestNodeIndex) && (requestNodeIndex <= 11)))) { return this._NgControlStatusGroup_7_5; }
-    if (((token === import17.TemplateRef) && (21 === requestNodeIndex))) { return this._TemplateRef_21_5; }
-    if (((token === import15.NgSwitchCase) && (21 === requestNodeIndex))) { return this._NgSwitchCase_21_6; }
-    if (((token === import17.TemplateRef) && (23 === requestNodeIndex))) { return this._TemplateRef_23_5; }
-    if (((token === import15.NgSwitchCase) && (23 === requestNodeIndex))) { return this._NgSwitchCase_23_6; }
-    if (((token === import15.NgSwitch) && ((19 <= requestNodeIndex) && (requestNodeIndex <= 24)))) { return this._NgSwitch_19_3; }
+    if (((token === import12.NgForm) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 8)))) { return this._NgForm_3_3; }
+    if (((token === import16.ControlContainer) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 8)))) { return this._ControlContainer_3_4; }
+    if (((token === import13.NgControlStatusGroup) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 8)))) { return this._NgControlStatusGroup_3_5; }
+    if (((token === import15.TemplateRef) && (18 === requestNodeIndex))) { return this._TemplateRef_18_5; }
+    if (((token === import14.NgSwitchCase) && (18 === requestNodeIndex))) { return this._NgSwitchCase_18_6; }
+    if (((token === import15.TemplateRef) && (20 === requestNodeIndex))) { return this._TemplateRef_20_5; }
+    if (((token === import14.NgSwitchCase) && (20 === requestNodeIndex))) { return this._NgSwitchCase_20_6; }
+    if (((token === import14.NgSwitch) && ((16 <= requestNodeIndex) && (requestNodeIndex <= 21)))) { return this._NgSwitch_16_3; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
     const currVal_9:any = this.context.loading;
     if (import4.checkBinding(throwOnChange,this._expr_9,currVal_9)) {
-      this._NgSwitch_19_3.ngSwitch = currVal_9;
+      this._NgSwitch_16_3.ngSwitch = currVal_9;
       this._expr_9 = currVal_9;
     }
     const currVal_10:any = false;
     if (import4.checkBinding(throwOnChange,this._expr_10,currVal_10)) {
-      this._NgSwitchCase_21_6.ngSwitchCase = currVal_10;
+      this._NgSwitchCase_18_6.ngSwitchCase = currVal_10;
       this._expr_10 = currVal_10;
     }
     const currVal_11:any = true;
     if (import4.checkBinding(throwOnChange,this._expr_11,currVal_11)) {
-      this._NgSwitchCase_23_6.ngSwitchCase = currVal_11;
+      this._NgSwitchCase_20_6.ngSwitchCase = currVal_11;
       this._expr_11 = currVal_11;
     }
     this.detectContentChildrenChanges(throwOnChange);
-    const currVal_3:any = this._NgControlStatusGroup_7_5.ngClassUntouched;
+    const currVal_3:any = this._NgControlStatusGroup_3_5.ngClassUntouched;
     if (import4.checkBinding(throwOnChange,this._expr_3,currVal_3)) {
-      this.renderer.setElementClass(this._el_7,'ng-untouched',currVal_3);
+      this.renderer.setElementClass(this._el_3,'ng-untouched',currVal_3);
       this._expr_3 = currVal_3;
     }
-    const currVal_4:any = this._NgControlStatusGroup_7_5.ngClassTouched;
+    const currVal_4:any = this._NgControlStatusGroup_3_5.ngClassTouched;
     if (import4.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
-      this.renderer.setElementClass(this._el_7,'ng-touched',currVal_4);
+      this.renderer.setElementClass(this._el_3,'ng-touched',currVal_4);
       this._expr_4 = currVal_4;
     }
-    const currVal_5:any = this._NgControlStatusGroup_7_5.ngClassPristine;
+    const currVal_5:any = this._NgControlStatusGroup_3_5.ngClassPristine;
     if (import4.checkBinding(throwOnChange,this._expr_5,currVal_5)) {
-      this.renderer.setElementClass(this._el_7,'ng-pristine',currVal_5);
+      this.renderer.setElementClass(this._el_3,'ng-pristine',currVal_5);
       this._expr_5 = currVal_5;
     }
-    const currVal_6:any = this._NgControlStatusGroup_7_5.ngClassDirty;
+    const currVal_6:any = this._NgControlStatusGroup_3_5.ngClassDirty;
     if (import4.checkBinding(throwOnChange,this._expr_6,currVal_6)) {
-      this.renderer.setElementClass(this._el_7,'ng-dirty',currVal_6);
+      this.renderer.setElementClass(this._el_3,'ng-dirty',currVal_6);
       this._expr_6 = currVal_6;
     }
-    const currVal_7:any = this._NgControlStatusGroup_7_5.ngClassValid;
+    const currVal_7:any = this._NgControlStatusGroup_3_5.ngClassValid;
     if (import4.checkBinding(throwOnChange,this._expr_7,currVal_7)) {
-      this.renderer.setElementClass(this._el_7,'ng-valid',currVal_7);
+      this.renderer.setElementClass(this._el_3,'ng-valid',currVal_7);
       this._expr_7 = currVal_7;
     }
-    const currVal_8:any = this._NgControlStatusGroup_7_5.ngClassInvalid;
+    const currVal_8:any = this._NgControlStatusGroup_3_5.ngClassInvalid;
     if (import4.checkBinding(throwOnChange,this._expr_8,currVal_8)) {
-      this.renderer.setElementClass(this._el_7,'ng-invalid',currVal_8);
+      this.renderer.setElementClass(this._el_3,'ng-invalid',currVal_8);
       this._expr_8 = currVal_8;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
-  private _handle_ngSubmit_7_0($event:any):boolean {
+  private _handle_ngSubmit_3_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     const pd_0:any = ((<any>this.context.calculateSalaries()) !== false);
     return (true && pd_0);
   }
-  private _handle_submit_7_1($event:any):boolean {
+  private _handle_submit_3_1($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this._NgForm_7_3.onSubmit()) !== false);
+    const pd_0:any = ((<any>this._NgForm_3_3.onSubmit()) !== false);
     return (true && pd_0);
   }
-  private _handle_reset_7_2($event:any):boolean {
+  private _handle_reset_3_2($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this._NgForm_7_3.onReset()) !== false);
+    const pd_0:any = ((<any>this._NgForm_3_3.onReset()) !== false);
     return (true && pd_0);
   }
 }
@@ -315,7 +296,7 @@ class _View_SalaryComponent1 extends import1.AppView<any> {
   _anchor_19:any;
   /*private*/ _appEl_19:import2.AppElement;
   _TemplateRef_19_5:any;
-  _NgFor_19_6:import19.NgFor;
+  _NgFor_19_6:import17.NgFor;
   _text_20:any;
   _text_21:any;
   _text_22:any;
@@ -346,8 +327,8 @@ class _View_SalaryComponent1 extends import1.AppView<any> {
     this._text_18 = this.renderer.createText(this._el_6,'\n    ',(null as any));
     this._anchor_19 = this.renderer.createTemplateAnchor(this._el_6,(null as any));
     this._appEl_19 = new import2.AppElement(19,6,this,this._anchor_19);
-    this._TemplateRef_19_5 = new import17.TemplateRef_(this._appEl_19,viewFactory_SalaryComponent2);
-    this._NgFor_19_6 = new import19.NgFor(this._appEl_19.vcRef,this._TemplateRef_19_5,this.parent.parentInjector.get(import20.IterableDiffers),this.parent.ref);
+    this._TemplateRef_19_5 = new import15.TemplateRef_(this._appEl_19,viewFactory_SalaryComponent2);
+    this._NgFor_19_6 = new import17.NgFor(this._appEl_19.vcRef,this._TemplateRef_19_5,this.parent.parentInjector.get(import18.IterableDiffers),this.parent.ref);
     this._text_20 = this.renderer.createText(this._el_6,'\n',(null as any));
     this._text_21 = this.renderer.createText(this._el_2,'\n',(null as any));
     this._text_22 = this.renderer.createText(this._el_0,'\n',(null as any));
@@ -381,8 +362,8 @@ class _View_SalaryComponent1 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import17.TemplateRef) && (19 === requestNodeIndex))) { return this._TemplateRef_19_5; }
-    if (((token === import19.NgFor) && (19 === requestNodeIndex))) { return this._NgFor_19_6; }
+    if (((token === import15.TemplateRef) && (19 === requestNodeIndex))) { return this._TemplateRef_19_5; }
+    if (((token === import17.NgFor) && (19 === requestNodeIndex))) { return this._NgFor_19_6; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -407,7 +388,7 @@ function viewFactory_SalaryComponent1(viewUtils:import4.ViewUtils,parentInjector
 class _View_SalaryComponent2 extends import1.AppView<any> {
   _el_0:any;
   /*private*/ _appEl_0:import2.AppElement;
-  _SalaryDataComponent_0_4:import21.SalaryDataComponent;
+  _SalaryDataComponent_0_4:import19.SalaryDataComponent;
   _text_1:any;
   /*private*/ _expr_0:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement) {
@@ -417,8 +398,8 @@ class _View_SalaryComponent2 extends import1.AppView<any> {
     this._el_0 = this.renderer.createElement((null as any),'tr',(null as any));
     this.renderer.setElementAttribute(this._el_0,'wc-salary-data','');
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
-    var compView_0:any = import22.viewFactory_SalaryDataComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._SalaryDataComponent_0_4 = new import21.SalaryDataComponent();
+    var compView_0:any = import20.viewFactory_SalaryDataComponent0(this.viewUtils,this.injector(0),this._appEl_0);
+    this._SalaryDataComponent_0_4 = new import19.SalaryDataComponent();
     this._appEl_0.initComponent(this._SalaryDataComponent_0_4,[],compView_0);
     this._text_1 = this.renderer.createText((null as any),'\n    ',(null as any));
     compView_0.create(this._SalaryDataComponent_0_4,[],(null as any));
@@ -431,7 +412,7 @@ class _View_SalaryComponent2 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import21.SalaryDataComponent) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 1)))) { return this._SalaryDataComponent_0_4; }
+    if (((token === import19.SalaryDataComponent) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 1)))) { return this._SalaryDataComponent_0_4; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -457,7 +438,7 @@ class _View_SalaryComponent3 extends import1.AppView<any> {
   _text_6:any;
   _el_7:any;
   /*private*/ _appEl_7:import2.AppElement;
-  _LoadingIndicator_7_4:import23.LoadingIndicator;
+  _LoadingIndicator_7_4:import21.LoadingIndicator;
   _text_8:any;
   _text_9:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement) {
@@ -474,8 +455,8 @@ class _View_SalaryComponent3 extends import1.AppView<any> {
     this._text_6 = this.renderer.createText(this._el_2,'\n      ',(null as any));
     this._el_7 = this.renderer.createElement(this._el_2,'loading-indicator',(null as any));
     this._appEl_7 = new import2.AppElement(7,2,this,this._el_7);
-    var compView_7:any = import24.viewFactory_LoadingIndicator0(this.viewUtils,this.injector(7),this._appEl_7);
-    this._LoadingIndicator_7_4 = new import23.LoadingIndicator();
+    var compView_7:any = import22.viewFactory_LoadingIndicator0(this.viewUtils,this.injector(7),this._appEl_7);
+    this._LoadingIndicator_7_4 = new import21.LoadingIndicator();
     this._appEl_7.initComponent(this._LoadingIndicator_7_4,[],compView_7);
     compView_7.create(this._LoadingIndicator_7_4,[],(null as any));
     this._text_8 = this.renderer.createText(this._el_2,'\n    ',(null as any));
@@ -496,7 +477,7 @@ class _View_SalaryComponent3 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import23.LoadingIndicator) && (7 === requestNodeIndex))) { return this._LoadingIndicator_7_4; }
+    if (((token === import21.LoadingIndicator) && (7 === requestNodeIndex))) { return this._LoadingIndicator_7_4; }
     return notFoundResult;
   }
 }

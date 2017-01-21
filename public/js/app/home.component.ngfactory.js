@@ -79,7 +79,8 @@ var _View_HomeComponent0 = (function (_super) {
         this._text_5 = this.renderer.createText(this._el_4, 'Wage Calculator', null);
         this._text_6 = this.renderer.createText(this._el_2, '\n    ', null);
         this._el_7 = this.renderer.createElement(this._el_2, 'a', null);
-        this.renderer.setElementAttribute(this._el_7, 'class', 'view btn btn-primary');
+        this.renderer.setElementAttribute(this._el_7, 'class', 'btn');
+        this.renderer.setElementAttribute(this._el_7, 'id', 'view-btn');
         this._RouterLinkWithHref_7_3 = new import11.RouterLinkWithHref(this.parentInjector.get(import12.Router), this.parentInjector.get(import13.ActivatedRoute), this.parentInjector.get(import14.LocationStrategy));
         this._text_8 = this.renderer.createText(this._el_7, 'Click here to view data', null);
         this._text_9 = this.renderer.createText(this._el_2, '\n    ', null);

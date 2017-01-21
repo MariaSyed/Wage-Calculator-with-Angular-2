@@ -80,6 +80,7 @@ var AppModuleInjector = (function (_super) {
             import34.HomeComponentNgFactory,
             import35.TimesheetComponentNgFactory,
             import36.SalaryComponentNgFactory,
+            import34.HomeComponentNgFactory,
             import37.AppComponentNgFactory
         ], [import37.AppComponentNgFactory]);
     }
@@ -447,6 +448,10 @@ var AppModuleInjector = (function (_super) {
                         {
                             path: 'salaries',
                             component: import47.SalaryComponent
+                        },
+                        {
+                            path: '**',
+                            component: import45.HomeComponent
                         }
                     ]
                 ]);

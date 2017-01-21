@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { routing } from "./app.routing";
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header.component';
 import { HomeComponent } from './home.component';
 import { ContentPagesModule } from './content-pages/content-pages.module';
 export var AppModule = (function () {
@@ -12,6 +13,7 @@ export var AppModule = (function () {
         { type: NgModule, args: [{
                     declarations: [
                         AppComponent,
+                        HeaderComponent,
                         HomeComponent
                     ],
                     imports: [

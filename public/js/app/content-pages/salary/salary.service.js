@@ -7,11 +7,12 @@ export var SalaryService = (function () {
     function SalaryService(http) {
         this.http = http;
         this.salaries = [];
+        this.domain = "http://wage-calculator-v2.herokuapp.com/";
     }
     SalaryService.prototype.getSalaries = function () {
         var _this = this;
         // return this.salaries;
-        return this.http.get('http://wage-calculator-v2.herokuapp.com/salary') //should be changed after deploying the app
+        return this.http.get(this.domain + 'salary') //should be changed after deploying the app
             .map(function (response) {
             return _this.salaries = _this.transformSalary(response.json().obj);
         })
@@ -19,7 +20,7 @@ export var SalaryService = (function () {
     };
     SalaryService.prototype.calculateSalaries = function () {
         var _this = this;
-        return this.http.post('http://wage-calculator-v2.herokuapp.com/salary', "")
+        return this.http.post(this.domain + 'salary', "")
             .map(function (response) {
             return _this.salaries = _this.transformSalary(response.json().obj);
         })

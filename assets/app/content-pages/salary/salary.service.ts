@@ -8,13 +8,13 @@ import { Salary } from "./salary.model";
 @Injectable()
 export class SalaryService {
     private salaries: Salary[] = [];
-
+    private domain: string = "http://wage-calculator-v2.herokuapp.com/";
 
     constructor(private http: Http) {}
 
     getSalaries() {
         // return this.salaries;
-        return this.http.get('http://wage-calculator-v2.herokuapp.com/salary')//should be changed after deploying the app
+        return this.http.get(this.domain + 'salary')//should be changed after deploying the app
             .map((response: Response) => {
               return this.salaries = this.transformSalary(response.json().obj);
             })
@@ -23,7 +23,7 @@ export class SalaryService {
 
 
     calculateSalaries(){
-      return this.http.post('http://wage-calculator-v2.herokuapp.com/salary',"")
+      return this.http.post(this.domain + 'salary',"")
         .map((response: Response) => {
           return this.salaries = this.transformSalary(response.json().obj);
         })

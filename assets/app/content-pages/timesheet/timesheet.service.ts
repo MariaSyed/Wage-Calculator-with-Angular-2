@@ -8,12 +8,13 @@ import { Entry } from "./entry.model";
 @Injectable()
 export class TimesheetService {
     private entries: Entry[] = [];
+    private domain: string = "http://wage-calculator-v2.herokuapp.com/";
     entryIsEdit = new EventEmitter<Entry>();
 
     constructor(private http: Http) {}
 
     getEntries() {
-     return this.http.get('http://wage-calculator-v2.herokuapp.com/timesheet-entry')
+     return this.http.get(this.domain + 'timesheet-entry')
        .map((response: Response) => {
          return this.entries = this.transformEntry(response.json().obj);
        })
@@ -23,7 +24,7 @@ export class TimesheetService {
     addEntry(entry: Entry) {
       const body = JSON.stringify(entry);
       const headers = new Headers({'Content-Type': 'application/json'});
-      return this.http.post('http://wage-calculator-v2.herokuapp.com/timesheet-entry', body, {headers: headers})
+      return this.http.post(this.domain + 'timesheet-entry', body, {headers: headers})
           .map((response: Response) => {
               const result = response.json();
               const entry = new Entry(result.obj.name, result.obj.id, result.obj.date, result.obj.startTime, result.obj.endTime, result.obj.dailyWage);
@@ -34,7 +35,7 @@ export class TimesheetService {
     }
 
     refreshEntries(){
-      return this.http.post('http://wage-calculator-v2.herokuapp.com/timesheet-entry/refresh','')
+      return this.http.post(this.domain + 'timesheet-entry/refresh','')
         .map((response: Response) =>{
           this.entries = this.transformEntry(response.json().obj);
           console.log(this.entries);
@@ -50,7 +51,7 @@ export class TimesheetService {
     updateEntry(entry: Entry) {
       const body = JSON.stringify(entry);
       const headers = new Headers({'Content-Type': 'application/json'});
-      return this.http.patch('http://wage-calculator-v2.herokuapp.com/timesheet-entry/' + entry.entryId, body, {headers: headers})
+      return this.http.patch(this.domain + 'timesheet-entry/' + entry.entryId, body, {headers: headers})
           .map((response: Response) => {
             entry.dailyWage = response.json().obj.dailyWage.toFixed(2);
             return response.json()}
@@ -60,7 +61,7 @@ export class TimesheetService {
 
     deleteEntry(entry: Entry) {
       this.entries.splice(this.entries.indexOf(entry), 1);
-      return this.http.delete('http://wage-calculator-v2.herokuapp.com/timesheet-entry/' + entry.entryId)
+      return this.http.delete(this.domain + 'timesheet-entry/' + entry.entryId)
           .map((response: Response) => response.json())
           .catch((error: Response) => Observable.throw(error.json()));
     }

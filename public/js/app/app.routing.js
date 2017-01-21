@@ -5,7 +5,8 @@ import { SalaryComponent } from "./content-pages/salary/salary.component";
 var APP_ROUTES = [
     { path: '', component: HomeComponent },
     { path: 'timesheet', component: TimesheetComponent },
-    { path: 'salaries', component: SalaryComponent }
+    { path: 'salaries', component: SalaryComponent },
+    { path: '**', component: HomeComponent }
 ];
 export var routing = RouterModule.forRoot(APP_ROUTES);
 //# sourceMappingURL=app.routing.js.map

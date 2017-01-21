@@ -90,6 +90,7 @@ input[type=text]:focus {
 #refresh-btn{
     margin-right:10%;
     float:right;
+    color: #4aa821!important;
 }
 
 #toggle-form-btn{

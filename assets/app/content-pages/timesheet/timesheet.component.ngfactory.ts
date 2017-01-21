@@ -16,21 +16,19 @@ import * as import8 from './timesheet.service';
 import * as import9 from '@angular/core/src/metadata/view';
 import * as import10 from '@angular/core/src/linker/component_factory';
 import * as import11 from '../content-pages.css.shim';
-import * as import12 from '../header.component';
-import * as import13 from '@angular/forms/src/directives/ng_form';
-import * as import14 from '@angular/forms/src/directives/ng_control_status';
-import * as import15 from './timesheet-input.component';
-import * as import16 from '@angular/common/src/directives/ng_switch';
-import * as import17 from '../header.component.ngfactory';
-import * as import18 from './timesheet-input.component.ngfactory';
-import * as import19 from '@angular/core/src/linker/template_ref';
-import * as import20 from '@angular/forms/src/directives/control_container';
-import * as import21 from '@angular/common/src/directives/ng_for';
-import * as import22 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import23 from './timesheet-data.component';
-import * as import24 from './timesheet-data.component.ngfactory';
-import * as import25 from '../loading.component';
-import * as import26 from '../loading.component.ngfactory';
+import * as import12 from '@angular/forms/src/directives/ng_form';
+import * as import13 from '@angular/forms/src/directives/ng_control_status';
+import * as import14 from './timesheet-input.component';
+import * as import15 from '@angular/common/src/directives/ng_switch';
+import * as import16 from './timesheet-input.component.ngfactory';
+import * as import17 from '@angular/core/src/linker/template_ref';
+import * as import18 from '@angular/forms/src/directives/control_container';
+import * as import19 from '@angular/common/src/directives/ng_for';
+import * as import20 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import21 from './timesheet-data.component';
+import * as import22 from './timesheet-data.component.ngfactory';
+import * as import23 from '../loading.component';
+import * as import24 from '../loading.component.ngfactory';
 var renderType_TimesheetComponent_Host:import0.RenderComponentType = (null as any);
 class _View_TimesheetComponent_Host0 extends import1.AppView<any> {
   _el_0:any;
@@ -68,58 +66,49 @@ const styles_TimesheetComponent:any[] = [import11.styles];
 var renderType_TimesheetComponent:import0.RenderComponentType = (null as any);
 class _View_TimesheetComponent0 extends import1.AppView<import3.TimesheetComponent> {
   _el_0:any;
-  /*private*/ _appEl_0:import2.AppElement;
-  _HeaderComponent_0_4:import12.HeaderComponent;
+  _NgForm_0_3:import12.NgForm;
+  _ControlContainer_0_4:any;
+  _NgControlStatusGroup_0_5:import13.NgControlStatusGroup;
   _text_1:any;
   _el_2:any;
   _text_3:any;
   _el_4:any;
-  _el_5:any;
+  _text_5:any;
   _text_6:any;
   _el_7:any;
-  _NgForm_7_3:import13.NgForm;
-  _ControlContainer_7_4:any;
-  _NgControlStatusGroup_7_5:import14.NgControlStatusGroup;
   _text_8:any;
   _el_9:any;
   _text_10:any;
-  _el_11:any;
-  _text_12:any;
+  _text_11:any;
+  _el_12:any;
   _text_13:any;
   _el_14:any;
   _text_15:any;
-  _el_16:any;
-  _text_17:any;
+  _text_16:any;
+  _el_17:any;
   _text_18:any;
-  _el_19:any;
-  _text_20:any;
+  _text_19:any;
+  _el_20:any;
   _el_21:any;
   _text_22:any;
   _text_23:any;
   _el_24:any;
+  /*private*/ _appEl_24:import2.AppElement;
+  _TimesheetInputComponent_24_4:import14.TimesheetInputComponent;
   _text_25:any;
-  _text_26:any;
-  _el_27:any;
-  _el_28:any;
+  _el_26:any;
+  _NgSwitch_26_3:import15.NgSwitch;
+  _text_27:any;
+  _anchor_28:any;
+  /*private*/ _appEl_28:import2.AppElement;
+  _TemplateRef_28_5:any;
+  _NgSwitchCase_28_6:import15.NgSwitchCase;
   _text_29:any;
-  _text_30:any;
-  _el_31:any;
-  /*private*/ _appEl_31:import2.AppElement;
-  _TimesheetInputComponent_31_4:import15.TimesheetInputComponent;
-  _text_32:any;
-  _el_33:any;
-  _NgSwitch_33_3:import16.NgSwitch;
-  _text_34:any;
-  _anchor_35:any;
-  /*private*/ _appEl_35:import2.AppElement;
-  _TemplateRef_35_5:any;
-  _NgSwitchCase_35_6:import16.NgSwitchCase;
-  _text_36:any;
-  _anchor_37:any;
-  /*private*/ _appEl_37:import2.AppElement;
-  _TemplateRef_37_5:any;
-  _NgSwitchCase_37_6:import16.NgSwitchCase;
-  _text_38:any;
+  _anchor_30:any;
+  /*private*/ _appEl_30:import2.AppElement;
+  _TemplateRef_30_5:any;
+  _NgSwitchCase_30_6:import15.NgSwitchCase;
+  _text_31:any;
   /*private*/ _expr_3:any;
   /*private*/ _expr_4:any;
   /*private*/ _expr_5:any;
@@ -134,88 +123,76 @@ class _View_TimesheetComponent0 extends import1.AppView<import3.TimesheetCompone
   }
   createInternal(rootSelector:string):import2.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'wc-header',(null as any));
-    this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
-    var compView_0:any = import17.viewFactory_HeaderComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._HeaderComponent_0_4 = new import12.HeaderComponent();
-    this._appEl_0.initComponent(this._HeaderComponent_0_4,[],compView_0);
-    compView_0.create(this._HeaderComponent_0_4,[],(null as any));
-    this._text_1 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_2 = this.renderer.createElement(parentRenderNode,'hr',(null as any));
-    this._text_3 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_4 = this.renderer.createElement(parentRenderNode,'p',(null as any));
-    this._el_5 = this.renderer.createElement(this._el_4,'br',(null as any));
-    this._text_6 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._el_7 = this.renderer.createElement(parentRenderNode,'form',(null as any));
-    this.renderer.setElementAttribute(this._el_7,'id','refresh-btn');
-    this._NgForm_7_3 = new import13.NgForm((null as any),(null as any));
-    this._ControlContainer_7_4 = this._NgForm_7_3;
-    this._NgControlStatusGroup_7_5 = new import14.NgControlStatusGroup(this._ControlContainer_7_4);
-    this._text_8 = this.renderer.createText(this._el_7,'\n    ',(null as any));
-    this._el_9 = this.renderer.createElement(this._el_7,'button',(null as any));
-    this.renderer.setElementAttribute(this._el_9,'class','btn btn-info');
-    this.renderer.setElementAttribute(this._el_9,'type','submit');
-    this._text_10 = this.renderer.createText(this._el_9,'Refresh! ',(null as any));
-    this._el_11 = this.renderer.createElement(this._el_9,'i',(null as any));
-    this.renderer.setElementAttribute(this._el_11,'aria-hidden','true');
-    this.renderer.setElementAttribute(this._el_11,'class','fa fa-refresh');
-    this._text_12 = this.renderer.createText(this._el_7,'\n',(null as any));
-    this._text_13 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_14 = this.renderer.createElement(parentRenderNode,'p',(null as any));
-    this._text_15 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._el_16 = this.renderer.createElement(parentRenderNode,'h2',(null as any));
-    this._text_17 = this.renderer.createText(this._el_16,'Time Sheet of Employees',(null as any));
-    this._text_18 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_19 = this.renderer.createElement(parentRenderNode,'p',(null as any));
-    this.renderer.setElementAttribute(this._el_19,'class','p-wc');
-    this._text_20 = this.renderer.createText(this._el_19,'Here is your rendered csv file. You can add further entries for ',(null as any));
-    this._el_21 = this.renderer.createElement(this._el_19,'strong',(null as any));
-    this._text_22 = this.renderer.createText(this._el_21,'this',(null as any));
-    this._text_23 = this.renderer.createText(this._el_19,' month by hitting the add button below and filling in the form.',(null as any));
-    this._el_24 = this.renderer.createElement(this._el_19,'br',(null as any));
-    this._text_25 = this.renderer.createText(this._el_19,' You can also refresh by clicking the refresh button i.e. all data is removed and added back straight from the\n    csv file.',(null as any));
-    this._text_26 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._el_27 = this.renderer.createElement(parentRenderNode,'a',(null as any));
-    this.renderer.setElementAttribute(this._el_27,'class','btn btn-danger');
-    this.renderer.setElementAttribute(this._el_27,'id','toggle-form-btn');
-    this._el_28 = this.renderer.createElement(this._el_27,'i',(null as any));
-    this.renderer.setElementAttribute(this._el_28,'aria-hidden','true');
-    this.renderer.setElementAttribute(this._el_28,'class','fa fa-plus');
-    this._text_29 = this.renderer.createText(this._el_27,'\n Add New Entry',(null as any));
-    this._text_30 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._el_31 = this.renderer.createElement(parentRenderNode,'wc-timesheet-input',(null as any));
-    this.renderer.setElementAttribute(this._el_31,'class','ts-input');
-    this.renderer.setElementAttribute(this._el_31,'style','display:none;');
-    this._appEl_31 = new import2.AppElement(31,(null as any),this,this._el_31);
-    var compView_31:any = import18.viewFactory_TimesheetInputComponent0(this.viewUtils,this.injector(31),this._appEl_31);
-    this._TimesheetInputComponent_31_4 = new import15.TimesheetInputComponent(this.parentInjector.get(import8.TimesheetService));
-    this._appEl_31.initComponent(this._TimesheetInputComponent_31_4,[],compView_31);
-    compView_31.create(this._TimesheetInputComponent_31_4,[],(null as any));
-    this._text_32 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._el_33 = this.renderer.createElement(parentRenderNode,'div',(null as any));
-    this._NgSwitch_33_3 = new import16.NgSwitch();
-    this._text_34 = this.renderer.createText(this._el_33,'\n  ',(null as any));
-    this._anchor_35 = this.renderer.createTemplateAnchor(this._el_33,(null as any));
-    this._appEl_35 = new import2.AppElement(35,33,this,this._anchor_35);
-    this._TemplateRef_35_5 = new import19.TemplateRef_(this._appEl_35,viewFactory_TimesheetComponent1);
-    this._NgSwitchCase_35_6 = new import16.NgSwitchCase(this._appEl_35.vcRef,this._TemplateRef_35_5,this._NgSwitch_33_3);
-    this._text_36 = this.renderer.createText(this._el_33,'\n  ',(null as any));
-    this._anchor_37 = this.renderer.createTemplateAnchor(this._el_33,(null as any));
-    this._appEl_37 = new import2.AppElement(37,33,this,this._anchor_37);
-    this._TemplateRef_37_5 = new import19.TemplateRef_(this._appEl_37,viewFactory_TimesheetComponent3);
-    this._NgSwitchCase_37_6 = new import16.NgSwitchCase(this._appEl_37.vcRef,this._TemplateRef_37_5,this._NgSwitch_33_3);
-    this._text_38 = this.renderer.createText(this._el_33,'\n',(null as any));
-    var disposable_0:Function = this.renderer.listen(this._el_7,'ngSubmit',this.eventHandler(this._handle_ngSubmit_7_0.bind(this)));
-    var disposable_1:Function = this.renderer.listen(this._el_7,'submit',this.eventHandler(this._handle_submit_7_1.bind(this)));
-    var disposable_2:Function = this.renderer.listen(this._el_7,'reset',this.eventHandler(this._handle_reset_7_2.bind(this)));
-    const subscription_0:any = this._NgForm_7_3.ngSubmit.subscribe(this.eventHandler(this._handle_ngSubmit_7_0.bind(this)));
+    this._el_0 = this.renderer.createElement(parentRenderNode,'form',(null as any));
+    this.renderer.setElementAttribute(this._el_0,'id','refresh-btn');
+    this._NgForm_0_3 = new import12.NgForm((null as any),(null as any));
+    this._ControlContainer_0_4 = this._NgForm_0_3;
+    this._NgControlStatusGroup_0_5 = new import13.NgControlStatusGroup(this._ControlContainer_0_4);
+    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_2 = this.renderer.createElement(this._el_0,'button',(null as any));
+    this.renderer.setElementAttribute(this._el_2,'class','btn');
+    this.renderer.setElementAttribute(this._el_2,'type','submit');
+    this._text_3 = this.renderer.createText(this._el_2,'Refresh! ',(null as any));
+    this._el_4 = this.renderer.createElement(this._el_2,'i',(null as any));
+    this.renderer.setElementAttribute(this._el_4,'aria-hidden','true');
+    this.renderer.setElementAttribute(this._el_4,'class','fa fa-refresh');
+    this._text_5 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_6 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._el_7 = this.renderer.createElement(parentRenderNode,'p',(null as any));
+    this._text_8 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
+    this._el_9 = this.renderer.createElement(parentRenderNode,'h2',(null as any));
+    this._text_10 = this.renderer.createText(this._el_9,'Time Sheet of Employees',(null as any));
+    this._text_11 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._el_12 = this.renderer.createElement(parentRenderNode,'p',(null as any));
+    this.renderer.setElementAttribute(this._el_12,'class','p-wc');
+    this._text_13 = this.renderer.createText(this._el_12,'Here is your rendered csv file. You can add further entries for ',(null as any));
+    this._el_14 = this.renderer.createElement(this._el_12,'strong',(null as any));
+    this._text_15 = this.renderer.createText(this._el_14,'this',(null as any));
+    this._text_16 = this.renderer.createText(this._el_12,' month by hitting the add button below and filling in the form.',(null as any));
+    this._el_17 = this.renderer.createElement(this._el_12,'br',(null as any));
+    this._text_18 = this.renderer.createText(this._el_12,' You can also refresh by clicking the refresh button i.e. all data is removed and added back straight from the\n    csv file.',(null as any));
+    this._text_19 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
+    this._el_20 = this.renderer.createElement(parentRenderNode,'a',(null as any));
+    this.renderer.setElementAttribute(this._el_20,'class','btn btn-danger');
+    this.renderer.setElementAttribute(this._el_20,'id','toggle-form-btn');
+    this._el_21 = this.renderer.createElement(this._el_20,'i',(null as any));
+    this.renderer.setElementAttribute(this._el_21,'aria-hidden','true');
+    this.renderer.setElementAttribute(this._el_21,'class','fa fa-plus');
+    this._text_22 = this.renderer.createText(this._el_20,'\n Add New Entry',(null as any));
+    this._text_23 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
+    this._el_24 = this.renderer.createElement(parentRenderNode,'wc-timesheet-input',(null as any));
+    this.renderer.setElementAttribute(this._el_24,'class','ts-input');
+    this.renderer.setElementAttribute(this._el_24,'style','display:none;');
+    this._appEl_24 = new import2.AppElement(24,(null as any),this,this._el_24);
+    var compView_24:any = import16.viewFactory_TimesheetInputComponent0(this.viewUtils,this.injector(24),this._appEl_24);
+    this._TimesheetInputComponent_24_4 = new import14.TimesheetInputComponent(this.parentInjector.get(import8.TimesheetService));
+    this._appEl_24.initComponent(this._TimesheetInputComponent_24_4,[],compView_24);
+    compView_24.create(this._TimesheetInputComponent_24_4,[],(null as any));
+    this._text_25 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
+    this._el_26 = this.renderer.createElement(parentRenderNode,'div',(null as any));
+    this._NgSwitch_26_3 = new import15.NgSwitch();
+    this._text_27 = this.renderer.createText(this._el_26,'\n  ',(null as any));
+    this._anchor_28 = this.renderer.createTemplateAnchor(this._el_26,(null as any));
+    this._appEl_28 = new import2.AppElement(28,26,this,this._anchor_28);
+    this._TemplateRef_28_5 = new import17.TemplateRef_(this._appEl_28,viewFactory_TimesheetComponent1);
+    this._NgSwitchCase_28_6 = new import15.NgSwitchCase(this._appEl_28.vcRef,this._TemplateRef_28_5,this._NgSwitch_26_3);
+    this._text_29 = this.renderer.createText(this._el_26,'\n  ',(null as any));
+    this._anchor_30 = this.renderer.createTemplateAnchor(this._el_26,(null as any));
+    this._appEl_30 = new import2.AppElement(30,26,this,this._anchor_30);
+    this._TemplateRef_30_5 = new import17.TemplateRef_(this._appEl_30,viewFactory_TimesheetComponent3);
+    this._NgSwitchCase_30_6 = new import15.NgSwitchCase(this._appEl_30.vcRef,this._TemplateRef_30_5,this._NgSwitch_26_3);
+    this._text_31 = this.renderer.createText(this._el_26,'\n',(null as any));
+    var disposable_0:Function = this.renderer.listen(this._el_0,'ngSubmit',this.eventHandler(this._handle_ngSubmit_0_0.bind(this)));
+    var disposable_1:Function = this.renderer.listen(this._el_0,'submit',this.eventHandler(this._handle_submit_0_1.bind(this)));
+    var disposable_2:Function = this.renderer.listen(this._el_0,'reset',this.eventHandler(this._handle_reset_0_2.bind(this)));
+    const subscription_0:any = this._NgForm_0_3.ngSubmit.subscribe(this.eventHandler(this._handle_ngSubmit_0_0.bind(this)));
     this._expr_3 = import7.UNINITIALIZED;
     this._expr_4 = import7.UNINITIALIZED;
     this._expr_5 = import7.UNINITIALIZED;
     this._expr_6 = import7.UNINITIALIZED;
     this._expr_7 = import7.UNINITIALIZED;
     this._expr_8 = import7.UNINITIALIZED;
-    var disposable_3:Function = this.renderer.listen(this._el_27,'click',this.eventHandler(this._handle_click_27_0.bind(this)));
+    var disposable_3:Function = this.renderer.listen(this._el_20,'click',this.eventHandler(this._handle_click_20_0.bind(this)));
     this._expr_10 = import7.UNINITIALIZED;
     this._expr_11 = import7.UNINITIALIZED;
     this._expr_12 = import7.UNINITIALIZED;
@@ -225,40 +202,33 @@ class _View_TimesheetComponent0 extends import1.AppView<import3.TimesheetCompone
       this._el_2,
       this._text_3,
       this._el_4,
-      this._el_5,
+      this._text_5,
       this._text_6,
       this._el_7,
       this._text_8,
       this._el_9,
       this._text_10,
-      this._el_11,
-      this._text_12,
+      this._text_11,
+      this._el_12,
       this._text_13,
       this._el_14,
       this._text_15,
-      this._el_16,
-      this._text_17,
+      this._text_16,
+      this._el_17,
       this._text_18,
-      this._el_19,
-      this._text_20,
+      this._text_19,
+      this._el_20,
       this._el_21,
       this._text_22,
       this._text_23,
       this._el_24,
       this._text_25,
-      this._text_26,
-      this._el_27,
-      this._el_28,
+      this._el_26,
+      this._text_27,
+      this._anchor_28,
       this._text_29,
-      this._text_30,
-      this._el_31,
-      this._text_32,
-      this._el_33,
-      this._text_34,
-      this._anchor_35,
-      this._text_36,
-      this._anchor_37,
-      this._text_38
+      this._anchor_30,
+      this._text_31
     ]
     ,[
       disposable_0,
@@ -270,84 +240,83 @@ class _View_TimesheetComponent0 extends import1.AppView<import3.TimesheetCompone
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import12.HeaderComponent) && (0 === requestNodeIndex))) { return this._HeaderComponent_0_4; }
-    if (((token === import13.NgForm) && ((7 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._NgForm_7_3; }
-    if (((token === import20.ControlContainer) && ((7 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._ControlContainer_7_4; }
-    if (((token === import14.NgControlStatusGroup) && ((7 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._NgControlStatusGroup_7_5; }
-    if (((token === import15.TimesheetInputComponent) && (31 === requestNodeIndex))) { return this._TimesheetInputComponent_31_4; }
-    if (((token === import19.TemplateRef) && (35 === requestNodeIndex))) { return this._TemplateRef_35_5; }
-    if (((token === import16.NgSwitchCase) && (35 === requestNodeIndex))) { return this._NgSwitchCase_35_6; }
-    if (((token === import19.TemplateRef) && (37 === requestNodeIndex))) { return this._TemplateRef_37_5; }
-    if (((token === import16.NgSwitchCase) && (37 === requestNodeIndex))) { return this._NgSwitchCase_37_6; }
-    if (((token === import16.NgSwitch) && ((33 <= requestNodeIndex) && (requestNodeIndex <= 38)))) { return this._NgSwitch_33_3; }
+    if (((token === import12.NgForm) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 5)))) { return this._NgForm_0_3; }
+    if (((token === import18.ControlContainer) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 5)))) { return this._ControlContainer_0_4; }
+    if (((token === import13.NgControlStatusGroup) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 5)))) { return this._NgControlStatusGroup_0_5; }
+    if (((token === import14.TimesheetInputComponent) && (24 === requestNodeIndex))) { return this._TimesheetInputComponent_24_4; }
+    if (((token === import17.TemplateRef) && (28 === requestNodeIndex))) { return this._TemplateRef_28_5; }
+    if (((token === import15.NgSwitchCase) && (28 === requestNodeIndex))) { return this._NgSwitchCase_28_6; }
+    if (((token === import17.TemplateRef) && (30 === requestNodeIndex))) { return this._TemplateRef_30_5; }
+    if (((token === import15.NgSwitchCase) && (30 === requestNodeIndex))) { return this._NgSwitchCase_30_6; }
+    if (((token === import15.NgSwitch) && ((26 <= requestNodeIndex) && (requestNodeIndex <= 31)))) { return this._NgSwitch_26_3; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._TimesheetInputComponent_31_4.ngOnInit(); }
+    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._TimesheetInputComponent_24_4.ngOnInit(); }
     const currVal_10:any = this.context.loading;
     if (import4.checkBinding(throwOnChange,this._expr_10,currVal_10)) {
-      this._NgSwitch_33_3.ngSwitch = currVal_10;
+      this._NgSwitch_26_3.ngSwitch = currVal_10;
       this._expr_10 = currVal_10;
     }
     const currVal_11:any = false;
     if (import4.checkBinding(throwOnChange,this._expr_11,currVal_11)) {
-      this._NgSwitchCase_35_6.ngSwitchCase = currVal_11;
+      this._NgSwitchCase_28_6.ngSwitchCase = currVal_11;
       this._expr_11 = currVal_11;
     }
     const currVal_12:any = true;
     if (import4.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
-      this._NgSwitchCase_37_6.ngSwitchCase = currVal_12;
+      this._NgSwitchCase_30_6.ngSwitchCase = currVal_12;
       this._expr_12 = currVal_12;
     }
     this.detectContentChildrenChanges(throwOnChange);
-    const currVal_3:any = this._NgControlStatusGroup_7_5.ngClassUntouched;
+    const currVal_3:any = this._NgControlStatusGroup_0_5.ngClassUntouched;
     if (import4.checkBinding(throwOnChange,this._expr_3,currVal_3)) {
-      this.renderer.setElementClass(this._el_7,'ng-untouched',currVal_3);
+      this.renderer.setElementClass(this._el_0,'ng-untouched',currVal_3);
       this._expr_3 = currVal_3;
     }
-    const currVal_4:any = this._NgControlStatusGroup_7_5.ngClassTouched;
+    const currVal_4:any = this._NgControlStatusGroup_0_5.ngClassTouched;
     if (import4.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
-      this.renderer.setElementClass(this._el_7,'ng-touched',currVal_4);
+      this.renderer.setElementClass(this._el_0,'ng-touched',currVal_4);
       this._expr_4 = currVal_4;
     }
-    const currVal_5:any = this._NgControlStatusGroup_7_5.ngClassPristine;
+    const currVal_5:any = this._NgControlStatusGroup_0_5.ngClassPristine;
     if (import4.checkBinding(throwOnChange,this._expr_5,currVal_5)) {
-      this.renderer.setElementClass(this._el_7,'ng-pristine',currVal_5);
+      this.renderer.setElementClass(this._el_0,'ng-pristine',currVal_5);
       this._expr_5 = currVal_5;
     }
-    const currVal_6:any = this._NgControlStatusGroup_7_5.ngClassDirty;
+    const currVal_6:any = this._NgControlStatusGroup_0_5.ngClassDirty;
     if (import4.checkBinding(throwOnChange,this._expr_6,currVal_6)) {
-      this.renderer.setElementClass(this._el_7,'ng-dirty',currVal_6);
+      this.renderer.setElementClass(this._el_0,'ng-dirty',currVal_6);
       this._expr_6 = currVal_6;
     }
-    const currVal_7:any = this._NgControlStatusGroup_7_5.ngClassValid;
+    const currVal_7:any = this._NgControlStatusGroup_0_5.ngClassValid;
     if (import4.checkBinding(throwOnChange,this._expr_7,currVal_7)) {
-      this.renderer.setElementClass(this._el_7,'ng-valid',currVal_7);
+      this.renderer.setElementClass(this._el_0,'ng-valid',currVal_7);
       this._expr_7 = currVal_7;
     }
-    const currVal_8:any = this._NgControlStatusGroup_7_5.ngClassInvalid;
+    const currVal_8:any = this._NgControlStatusGroup_0_5.ngClassInvalid;
     if (import4.checkBinding(throwOnChange,this._expr_8,currVal_8)) {
-      this.renderer.setElementClass(this._el_7,'ng-invalid',currVal_8);
+      this.renderer.setElementClass(this._el_0,'ng-invalid',currVal_8);
       this._expr_8 = currVal_8;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
-  private _handle_ngSubmit_7_0($event:any):boolean {
+  private _handle_ngSubmit_0_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     const pd_0:any = ((<any>this.context.onRefresh()) !== false);
     return (true && pd_0);
   }
-  private _handle_submit_7_1($event:any):boolean {
+  private _handle_submit_0_1($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this._NgForm_7_3.onSubmit()) !== false);
+    const pd_0:any = ((<any>this._NgForm_0_3.onSubmit()) !== false);
     return (true && pd_0);
   }
-  private _handle_reset_7_2($event:any):boolean {
+  private _handle_reset_0_2($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this._NgForm_7_3.onReset()) !== false);
+    const pd_0:any = ((<any>this._NgForm_0_3.onReset()) !== false);
     return (true && pd_0);
   }
-  private _handle_click_27_0($event:any):boolean {
+  private _handle_click_20_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     const pd_0:any = ((<any>this.context.toggleForm()) !== false);
     return (true && pd_0);
@@ -392,7 +361,7 @@ class _View_TimesheetComponent1 extends import1.AppView<any> {
   _anchor_31:any;
   /*private*/ _appEl_31:import2.AppElement;
   _TemplateRef_31_5:any;
-  _NgFor_31_6:import21.NgFor;
+  _NgFor_31_6:import19.NgFor;
   _text_32:any;
   _text_33:any;
   _text_34:any;
@@ -436,8 +405,8 @@ class _View_TimesheetComponent1 extends import1.AppView<any> {
     this._text_30 = this.renderer.createText(this._el_6,'\n          ',(null as any));
     this._anchor_31 = this.renderer.createTemplateAnchor(this._el_6,(null as any));
     this._appEl_31 = new import2.AppElement(31,6,this,this._anchor_31);
-    this._TemplateRef_31_5 = new import19.TemplateRef_(this._appEl_31,viewFactory_TimesheetComponent2);
-    this._NgFor_31_6 = new import21.NgFor(this._appEl_31.vcRef,this._TemplateRef_31_5,this.parent.parentInjector.get(import22.IterableDiffers),this.parent.ref);
+    this._TemplateRef_31_5 = new import17.TemplateRef_(this._appEl_31,viewFactory_TimesheetComponent2);
+    this._NgFor_31_6 = new import19.NgFor(this._appEl_31.vcRef,this._TemplateRef_31_5,this.parent.parentInjector.get(import20.IterableDiffers),this.parent.ref);
     this._text_32 = this.renderer.createText(this._el_6,'\n        ',(null as any));
     this._text_33 = this.renderer.createText(this._el_2,'\n    ',(null as any));
     this._text_34 = this.renderer.createText(this._el_0,'\n',(null as any));
@@ -483,8 +452,8 @@ class _View_TimesheetComponent1 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import19.TemplateRef) && (31 === requestNodeIndex))) { return this._TemplateRef_31_5; }
-    if (((token === import21.NgFor) && (31 === requestNodeIndex))) { return this._NgFor_31_6; }
+    if (((token === import17.TemplateRef) && (31 === requestNodeIndex))) { return this._TemplateRef_31_5; }
+    if (((token === import19.NgFor) && (31 === requestNodeIndex))) { return this._NgFor_31_6; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -509,7 +478,7 @@ function viewFactory_TimesheetComponent1(viewUtils:import4.ViewUtils,parentInjec
 class _View_TimesheetComponent2 extends import1.AppView<any> {
   _el_0:any;
   /*private*/ _appEl_0:import2.AppElement;
-  _TimesheetDataComponent_0_4:import23.TimesheetDataComponent;
+  _TimesheetDataComponent_0_4:import21.TimesheetDataComponent;
   /*private*/ _expr_0:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement) {
     super(_View_TimesheetComponent2,renderType_TimesheetComponent,import6.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
@@ -518,8 +487,8 @@ class _View_TimesheetComponent2 extends import1.AppView<any> {
     this._el_0 = this.renderer.createElement((null as any),'tr',(null as any));
     this.renderer.setElementAttribute(this._el_0,'wc-timesheet-data','');
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
-    var compView_0:any = import24.viewFactory_TimesheetDataComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._TimesheetDataComponent_0_4 = new import23.TimesheetDataComponent(this.parent.parent.parentInjector.get(import8.TimesheetService));
+    var compView_0:any = import22.viewFactory_TimesheetDataComponent0(this.viewUtils,this.injector(0),this._appEl_0);
+    this._TimesheetDataComponent_0_4 = new import21.TimesheetDataComponent(this.parent.parent.parentInjector.get(import8.TimesheetService));
     this._appEl_0.initComponent(this._TimesheetDataComponent_0_4,[],compView_0);
     compView_0.create(this._TimesheetDataComponent_0_4,[],(null as any));
     this._expr_0 = import7.UNINITIALIZED;
@@ -527,7 +496,7 @@ class _View_TimesheetComponent2 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import23.TimesheetDataComponent) && (0 === requestNodeIndex))) { return this._TimesheetDataComponent_0_4; }
+    if (((token === import21.TimesheetDataComponent) && (0 === requestNodeIndex))) { return this._TimesheetDataComponent_0_4; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -555,7 +524,7 @@ class _View_TimesheetComponent3 extends import1.AppView<any> {
   _text_8:any;
   _el_9:any;
   /*private*/ _appEl_9:import2.AppElement;
-  _LoadingIndicator_9_4:import25.LoadingIndicator;
+  _LoadingIndicator_9_4:import23.LoadingIndicator;
   _text_10:any;
   _text_11:any;
   _text_12:any;
@@ -575,8 +544,8 @@ class _View_TimesheetComponent3 extends import1.AppView<any> {
     this._text_8 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_9 = this.renderer.createElement(this._el_4,'loading-indicator',(null as any));
     this._appEl_9 = new import2.AppElement(9,4,this,this._el_9);
-    var compView_9:any = import26.viewFactory_LoadingIndicator0(this.viewUtils,this.injector(9),this._appEl_9);
-    this._LoadingIndicator_9_4 = new import25.LoadingIndicator();
+    var compView_9:any = import24.viewFactory_LoadingIndicator0(this.viewUtils,this.injector(9),this._appEl_9);
+    this._LoadingIndicator_9_4 = new import23.LoadingIndicator();
     this._appEl_9.initComponent(this._LoadingIndicator_9_4,[],compView_9);
     compView_9.create(this._LoadingIndicator_9_4,[],(null as any));
     this._text_10 = this.renderer.createText(this._el_4,'\n    ',(null as any));
@@ -601,7 +570,7 @@ class _View_TimesheetComponent3 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import25.LoadingIndicator) && (9 === requestNodeIndex))) { return this._LoadingIndicator_9_4; }
+    if (((token === import23.LoadingIndicator) && (9 === requestNodeIndex))) { return this._LoadingIndicator_9_4; }
     return notFoundResult;
   }
 }

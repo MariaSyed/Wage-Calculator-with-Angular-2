@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { routing } from "./content-pages.routing";
 
 import { LoadingIndicator } from "./loading.component";
-import { HeaderComponent } from "./header.component";
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { TimesheetDataComponent } from './timesheet/timesheet-data.component';
 import { TimesheetInputComponent } from './timesheet/timesheet-input.component';
@@ -17,7 +16,6 @@ import { SalaryService } from './salary/salary.service';
 @NgModule({
   declarations: [
     LoadingIndicator,
-    HeaderComponent,
     TimesheetComponent,
     TimesheetDataComponent,
     TimesheetInputComponent,

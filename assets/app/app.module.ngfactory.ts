@@ -129,6 +129,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
       import34.HomeComponentNgFactory,
       import35.TimesheetComponentNgFactory,
       import36.SalaryComponentNgFactory,
+      import34.HomeComponentNgFactory,
       import37.AppComponentNgFactory
     ]
     ,[import37.AppComponentNgFactory]);
@@ -304,6 +305,11 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         {
           path: 'salaries',
           component: import47.SalaryComponent
+        }
+        ,
+        {
+          path: '**',
+          component: import45.HomeComponent
         }
 
       ]

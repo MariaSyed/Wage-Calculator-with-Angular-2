@@ -1,15 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    padding-top: 50px;
     font-family: Roboto !important;
-    background: #4ca1af;
-    /* fallback for old browsers */
-
-    background: -webkit-linear-gradient(to left, #4ca1af, #c4e0e5);
-    /* Chrome 10-25, Safari 5.1-6 */
-
-    background: linear-gradient(to left, #4ca1af, #c4e0e5);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #DCE35B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DCE35B , #45B649); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DCE35B , #45B649); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .loader-container {
@@ -35,7 +29,7 @@ body {
   width: 50px;
   height: 50px;
   border: 10px solid #e5e5e5;
-  border-top: 10px solid #00f;
+  border-top: 10px solid #2b6313;
 }
 
 @-webkit-keyframes spin {

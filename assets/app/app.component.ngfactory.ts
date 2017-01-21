@@ -17,9 +17,11 @@ import * as import9 from '@angular/core/src/change_detection/change_detection';
 import * as import10 from '@angular/http/src/http';
 import * as import11 from '@angular/core/src/metadata/view';
 import * as import12 from '@angular/core/src/linker/component_factory';
-import * as import13 from '@angular/router/src/directives/router_outlet';
-import * as import14 from '@angular/router/src/router_outlet_map';
-import * as import15 from '@angular/core/src/linker/component_factory_resolver';
+import * as import13 from './header.component';
+import * as import14 from '@angular/router/src/directives/router_outlet';
+import * as import15 from './header.component.ngfactory';
+import * as import16 from '@angular/router/src/router_outlet_map';
+import * as import17 from '@angular/core/src/linker/component_factory_resolver';
 var renderType_AppComponent_Host:import0.RenderComponentType = (null as any);
 class _View_AppComponent_Host0 extends import1.AppView<any> {
   _el_0:any;
@@ -65,30 +67,44 @@ var renderType_AppComponent:import0.RenderComponentType = (null as any);
 class _View_AppComponent0 extends import1.AppView<import3.AppComponent> {
   _el_0:any;
   /*private*/ _appEl_0:import2.AppElement;
-  _RouterOutlet_0_5:import13.RouterOutlet;
+  _HeaderComponent_0_4:import13.HeaderComponent;
   _text_1:any;
+  _el_2:any;
+  /*private*/ _appEl_2:import2.AppElement;
+  _RouterOutlet_2_5:import14.RouterOutlet;
+  _text_3:any;
   constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import2.AppElement) {
     super(_View_AppComponent0,renderType_AppComponent,import8.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import9.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import2.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'router-outlet',(null as any));
+    this._el_0 = this.renderer.createElement(parentRenderNode,'wc-header',(null as any));
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
-    this._RouterOutlet_0_5 = new import13.RouterOutlet(this.parentInjector.get(import14.RouterOutletMap),this._appEl_0.vcRef,this.parentInjector.get(import15.ComponentFactoryResolver),(null as any));
+    var compView_0:any = import15.viewFactory_HeaderComponent0(this.viewUtils,this.injector(0),this._appEl_0);
+    this._HeaderComponent_0_4 = new import13.HeaderComponent();
+    this._appEl_0.initComponent(this._HeaderComponent_0_4,[],compView_0);
+    compView_0.create(this._HeaderComponent_0_4,[],(null as any));
     this._text_1 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._el_2 = this.renderer.createElement(parentRenderNode,'router-outlet',(null as any));
+    this._appEl_2 = new import2.AppElement(2,(null as any),this,this._el_2);
+    this._RouterOutlet_2_5 = new import14.RouterOutlet(this.parentInjector.get(import16.RouterOutletMap),this._appEl_2.vcRef,this.parentInjector.get(import17.ComponentFactoryResolver),(null as any));
+    this._text_3 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     this.init([],[
       this._el_0,
-      this._text_1
+      this._text_1,
+      this._el_2,
+      this._text_3
     ]
     ,[],[]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import13.RouterOutlet) && (0 === requestNodeIndex))) { return this._RouterOutlet_0_5; }
+    if (((token === import13.HeaderComponent) && (0 === requestNodeIndex))) { return this._HeaderComponent_0_4; }
+    if (((token === import14.RouterOutlet) && (2 === requestNodeIndex))) { return this._RouterOutlet_2_5; }
     return notFoundResult;
   }
   destroyInternal():void {
-    this._RouterOutlet_0_5.ngOnDestroy();
+    this._RouterOutlet_2_5.ngOnDestroy();
   }
 }
 export function viewFactory_AppComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import2.AppElement):import1.AppView<import3.AppComponent> {

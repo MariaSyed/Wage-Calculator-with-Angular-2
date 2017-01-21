@@ -1,7 +1,9 @@
-.view {
+#view-btn {
     margin-left: 50px;
     padding: 20px!important;
     border-radius: 30px!important;
+    background-color: #4CAF50!important;
+    color: white;
 }
 
 #titleBox {
