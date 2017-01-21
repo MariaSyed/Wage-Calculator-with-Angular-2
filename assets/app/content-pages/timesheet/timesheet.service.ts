@@ -8,7 +8,7 @@ import { Entry } from "./entry.model";
 @Injectable()
 export class TimesheetService {
     private entries: Entry[] = [];
-    domain = "https://wage-calculator-v2.herokuapp.com/";
+    domain = "https://wage-calculator-v2.herokuapp.com/"; //"http://localhost:3000/";
     entryIsEdit = new EventEmitter<Entry>();
 
     constructor(private http: Http) {}

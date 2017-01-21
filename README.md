@@ -15,6 +15,9 @@ https://nodejs.org/en/download/
 ### Set up environment
 1. Navigate into the folder (in the command line/ terminal)
 2. Run `npm install` to install all required dependencies
+3. Change the domain name in services files by:
+  * Open timesheet.services.ts & salary.services.ts from their respective folders in assets/app/content-pages/
+  * Change the domain variable to "http://localhost:3000" in each file
 3. Run `npm run build` to run the development build script => Keep this process running! It recompiles the files upon changes.
 4. Run `./bin/mongod` to start mongodb server (or run mongod.exe file)=> Keep this process running too. It is the mongo server.
 5. Run `npm start` in a new command line/ terminal window => Keep this process running as well. It is the Nodejs server.
