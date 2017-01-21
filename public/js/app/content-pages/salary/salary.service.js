@@ -7,7 +7,7 @@ export var SalaryService = (function () {
     function SalaryService(http) {
         this.http = http;
         this.salaries = [];
-        this.domain = "http://wage-calculator-v2.herokuapp.com/";
+        this.domain = "https://wage-calculator-v2.herokuapp.com/";
     }
     SalaryService.prototype.getSalaries = function () {
         var _this = this;

@@ -31,12 +31,12 @@ import * as import23 from '@angular/http/src/base_response_options';
 import * as import24 from '@angular/http/src/backends/xhr_backend';
 import * as import25 from '@angular/http/src/base_request_options';
 import * as import26 from '@angular/forms/src/directives/radio_control_value_accessor';
-import * as import27 from '@angular/common/src/location/location';
-import * as import28 from '@angular/router/src/url_tree';
-import * as import29 from '@angular/router/src/router_outlet_map';
-import * as import30 from '@angular/core/src/linker/system_js_ng_module_factory_loader';
-import * as import31 from './content-pages/timesheet/timesheet.service';
-import * as import32 from './content-pages/salary/salary.service';
+import * as import27 from './content-pages/timesheet/timesheet.service';
+import * as import28 from './content-pages/salary/salary.service';
+import * as import29 from '@angular/common/src/location/location';
+import * as import30 from '@angular/router/src/url_tree';
+import * as import31 from '@angular/router/src/router_outlet_map';
+import * as import32 from '@angular/core/src/linker/system_js_ng_module_factory_loader';
 import * as import33 from '@angular/core/src/di/injector';
 import * as import34 from './home.component.ngfactory';
 import * as import35 from './content-pages/timesheet/timesheet.component.ngfactory';
@@ -109,23 +109,20 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   __RequestOptions_38:import25.BaseRequestOptions;
   __Http_39:any;
   __RadioControlRegistry_40:import26.RadioControlRegistry;
-  __ROUTER_CONFIGURATION_41:any;
-  __LocationStrategy_42:any;
-  __Location_43:import27.Location;
-  __UrlSerializer_44:import28.DefaultUrlSerializer;
-  __RouterOutletMap_45:import29.RouterOutletMap;
-  __NgModuleFactoryLoader_46:import30.SystemJsNgModuleLoader;
-  __ROUTES_47:any[];
-  __Router_48:any;
-  __ActivatedRoute_49:any;
-  __APP_BOOTSTRAP_LISTENER_50:any[];
-  __TimesheetService_51:import31.TimesheetService;
-  __SalaryService_52:import32.SalaryService;
+  __TimesheetService_41:import27.TimesheetService;
+  __SalaryService_42:import28.SalaryService;
+  __ROUTER_CONFIGURATION_43:any;
+  __LocationStrategy_44:any;
+  __Location_45:import29.Location;
+  __UrlSerializer_46:import30.DefaultUrlSerializer;
+  __RouterOutletMap_47:import31.RouterOutletMap;
+  __NgModuleFactoryLoader_48:import32.SystemJsNgModuleLoader;
+  __ROUTES_49:any[];
+  __Router_50:any;
+  __ActivatedRoute_51:any;
+  __APP_BOOTSTRAP_LISTENER_52:any[];
   constructor(parent:import33.Injector) {
     super(parent,[
-      import34.HomeComponentNgFactory,
-      import35.TimesheetComponentNgFactory,
-      import36.SalaryComponentNgFactory,
       import34.HomeComponentNgFactory,
       import35.TimesheetComponentNgFactory,
       import36.SalaryComponentNgFactory,
@@ -247,51 +244,40 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((this.__RadioControlRegistry_40 == (null as any))) { (this.__RadioControlRegistry_40 = new import26.RadioControlRegistry()); }
     return this.__RadioControlRegistry_40;
   }
-  get _ROUTER_CONFIGURATION_41():any {
-    if ((this.__ROUTER_CONFIGURATION_41 == (null as any))) { (this.__ROUTER_CONFIGURATION_41 = {}); }
-    return this.__ROUTER_CONFIGURATION_41;
+  get _TimesheetService_41():import27.TimesheetService {
+    if ((this.__TimesheetService_41 == (null as any))) { (this.__TimesheetService_41 = new import27.TimesheetService(this._Http_39)); }
+    return this.__TimesheetService_41;
   }
-  get _LocationStrategy_42():any {
-    if ((this.__LocationStrategy_42 == (null as any))) { (this.__LocationStrategy_42 = import6.provideLocationStrategy(this.parent.get(import43.PlatformLocation),this.parent.get(import44.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_41)); }
-    return this.__LocationStrategy_42;
+  get _SalaryService_42():import28.SalaryService {
+    if ((this.__SalaryService_42 == (null as any))) { (this.__SalaryService_42 = new import28.SalaryService(this._Http_39)); }
+    return this.__SalaryService_42;
   }
-  get _Location_43():import27.Location {
-    if ((this.__Location_43 == (null as any))) { (this.__Location_43 = new import27.Location(this._LocationStrategy_42)); }
-    return this.__Location_43;
+  get _ROUTER_CONFIGURATION_43():any {
+    if ((this.__ROUTER_CONFIGURATION_43 == (null as any))) { (this.__ROUTER_CONFIGURATION_43 = {}); }
+    return this.__ROUTER_CONFIGURATION_43;
   }
-  get _UrlSerializer_44():import28.DefaultUrlSerializer {
-    if ((this.__UrlSerializer_44 == (null as any))) { (this.__UrlSerializer_44 = new import28.DefaultUrlSerializer()); }
-    return this.__UrlSerializer_44;
+  get _LocationStrategy_44():any {
+    if ((this.__LocationStrategy_44 == (null as any))) { (this.__LocationStrategy_44 = import6.provideLocationStrategy(this.parent.get(import43.PlatformLocation),this.parent.get(import44.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_43)); }
+    return this.__LocationStrategy_44;
   }
-  get _RouterOutletMap_45():import29.RouterOutletMap {
-    if ((this.__RouterOutletMap_45 == (null as any))) { (this.__RouterOutletMap_45 = new import29.RouterOutletMap()); }
-    return this.__RouterOutletMap_45;
+  get _Location_45():import29.Location {
+    if ((this.__Location_45 == (null as any))) { (this.__Location_45 = new import29.Location(this._LocationStrategy_44)); }
+    return this.__Location_45;
   }
-  get _NgModuleFactoryLoader_46():import30.SystemJsNgModuleLoader {
-    if ((this.__NgModuleFactoryLoader_46 == (null as any))) { (this.__NgModuleFactoryLoader_46 = new import30.SystemJsNgModuleLoader(this._Compiler_17,this.parent.get(import30.SystemJsNgModuleLoaderConfig,(null as any)))); }
-    return this.__NgModuleFactoryLoader_46;
+  get _UrlSerializer_46():import30.DefaultUrlSerializer {
+    if ((this.__UrlSerializer_46 == (null as any))) { (this.__UrlSerializer_46 = new import30.DefaultUrlSerializer()); }
+    return this.__UrlSerializer_46;
   }
-  get _ROUTES_47():any[] {
-    if ((this.__ROUTES_47 == (null as any))) { (this.__ROUTES_47 = [
-      [
-        {
-          path: '',
-          component: import45.HomeComponent
-        }
-        ,
-        {
-          path: 'timesheet',
-          component: import46.TimesheetComponent
-        }
-        ,
-        {
-          path: 'salaries',
-          component: import47.SalaryComponent
-        }
-
-      ]
-      ,
-      [
+  get _RouterOutletMap_47():import31.RouterOutletMap {
+    if ((this.__RouterOutletMap_47 == (null as any))) { (this.__RouterOutletMap_47 = new import31.RouterOutletMap()); }
+    return this.__RouterOutletMap_47;
+  }
+  get _NgModuleFactoryLoader_48():import32.SystemJsNgModuleLoader {
+    if ((this.__NgModuleFactoryLoader_48 == (null as any))) { (this.__NgModuleFactoryLoader_48 = new import32.SystemJsNgModuleLoader(this._Compiler_17,this.parent.get(import32.SystemJsNgModuleLoaderConfig,(null as any)))); }
+    return this.__NgModuleFactoryLoader_48;
+  }
+  get _ROUTES_49():any[] {
+      if ((this.__ROUTES_49 == (null as any))) { (this.__ROUTES_49 = [[
         {
           path: '',
           component: import45.HomeComponent
@@ -313,34 +299,20 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         }
 
       ]
-
-    ]
-    ); }
-    return this.__ROUTES_47;
+    ]); }
+    return this.__ROUTES_49;
   }
-  get _Router_48():any {
-    if ((this.__Router_48 == (null as any))) { (this.__Router_48 = import6.setupRouter(this._ApplicationRef_16,this._UrlSerializer_44,this._RouterOutletMap_45,this._Location_43,this,this._NgModuleFactoryLoader_46,this._Compiler_17,this._ROUTES_47,this._ROUTER_CONFIGURATION_41)); }
-    return this.__Router_48;
+  get _Router_50():any {
+    if ((this.__Router_50 == (null as any))) { (this.__Router_50 = import6.setupRouter(this._ApplicationRef_16,this._UrlSerializer_46,this._RouterOutletMap_47,this._Location_45,this,this._NgModuleFactoryLoader_48,this._Compiler_17,this._ROUTES_49,this._ROUTER_CONFIGURATION_43)); }
+    return this.__Router_50;
   }
-  get _ActivatedRoute_49():any {
-    if ((this.__ActivatedRoute_49 == (null as any))) { (this.__ActivatedRoute_49 = import6.rootRoute(this._Router_48)); }
-    return this.__ActivatedRoute_49;
+  get _ActivatedRoute_51():any {
+    if ((this.__ActivatedRoute_51 == (null as any))) { (this.__ActivatedRoute_51 = import6.rootRoute(this._Router_50)); }
+    return this.__ActivatedRoute_51;
   }
-  get _APP_BOOTSTRAP_LISTENER_50():any[] {
-    if ((this.__APP_BOOTSTRAP_LISTENER_50 == (null as any))) { (this.__APP_BOOTSTRAP_LISTENER_50 = [
-      import6.initialRouterNavigation(this._Router_48,this._ROUTER_CONFIGURATION_41),
-      import6.initialRouterNavigation(this._Router_48,this._ROUTER_CONFIGURATION_41)
-    ]
-    ); }
-    return this.__APP_BOOTSTRAP_LISTENER_50;
-  }
-  get _TimesheetService_51():import31.TimesheetService {
-    if ((this.__TimesheetService_51 == (null as any))) { (this.__TimesheetService_51 = new import31.TimesheetService(this._Http_39)); }
-    return this.__TimesheetService_51;
-  }
-  get _SalaryService_52():import32.SalaryService {
-    if ((this.__SalaryService_52 == (null as any))) { (this.__SalaryService_52 = new import32.SalaryService(this._Http_39)); }
-    return this.__SalaryService_52;
+  get _APP_BOOTSTRAP_LISTENER_52():any[] {
+    if ((this.__APP_BOOTSTRAP_LISTENER_52 == (null as any))) { (this.__APP_BOOTSTRAP_LISTENER_52 = [import6.initialRouterNavigation(this._Router_50,this._ROUTER_CONFIGURATION_43)]); }
+    return this.__APP_BOOTSTRAP_LISTENER_52;
   }
   createInternal():import1.AppModule {
     this._CommonModule_0 = new import2.CommonModule();
@@ -401,18 +373,18 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import25.RequestOptions)) { return this._RequestOptions_38; }
     if ((token === import59.Http)) { return this._Http_39; }
     if ((token === import26.RadioControlRegistry)) { return this._RadioControlRegistry_40; }
-    if ((token === import6.ROUTER_CONFIGURATION)) { return this._ROUTER_CONFIGURATION_41; }
-    if ((token === import44.LocationStrategy)) { return this._LocationStrategy_42; }
-    if ((token === import27.Location)) { return this._Location_43; }
-    if ((token === import28.UrlSerializer)) { return this._UrlSerializer_44; }
-    if ((token === import29.RouterOutletMap)) { return this._RouterOutletMap_45; }
-    if ((token === import60.NgModuleFactoryLoader)) { return this._NgModuleFactoryLoader_46; }
-    if ((token === import61.ROUTES)) { return this._ROUTES_47; }
-    if ((token === import48.Router)) { return this._Router_48; }
-    if ((token === import62.ActivatedRoute)) { return this._ActivatedRoute_49; }
-    if ((token === import38.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_50; }
-    if ((token === import31.TimesheetService)) { return this._TimesheetService_51; }
-    if ((token === import32.SalaryService)) { return this._SalaryService_52; }
+    if ((token === import27.TimesheetService)) { return this._TimesheetService_41; }
+    if ((token === import28.SalaryService)) { return this._SalaryService_42; }
+    if ((token === import6.ROUTER_CONFIGURATION)) { return this._ROUTER_CONFIGURATION_43; }
+    if ((token === import44.LocationStrategy)) { return this._LocationStrategy_44; }
+    if ((token === import29.Location)) { return this._Location_45; }
+    if ((token === import30.UrlSerializer)) { return this._UrlSerializer_46; }
+    if ((token === import31.RouterOutletMap)) { return this._RouterOutletMap_47; }
+    if ((token === import60.NgModuleFactoryLoader)) { return this._NgModuleFactoryLoader_48; }
+    if ((token === import61.ROUTES)) { return this._ROUTES_49; }
+    if ((token === import48.Router)) { return this._Router_50; }
+    if ((token === import62.ActivatedRoute)) { return this._ActivatedRoute_51; }
+    if ((token === import38.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_52; }
     return notFoundResult;
   }
   destroyInternal():void {

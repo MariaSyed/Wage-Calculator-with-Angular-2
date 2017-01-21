@@ -61,6 +61,4 @@ function refreshDB(filePath, done) {
     });
 }
 
-
-//exporting module as refreshDB to be used
 module.exports = refreshDB;

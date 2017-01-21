@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { routing } from "./content-pages.routing";
 import { LoadingIndicator } from "./loading.component";
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { TimesheetDataComponent } from './timesheet/timesheet-data.component';
@@ -25,8 +24,7 @@ export var ContentPagesModule = (function () {
                     ],
                     imports: [
                         CommonModule,
-                        FormsModule,
-                        routing
+                        FormsModule
                     ],
                     providers: [TimesheetService, SalaryService]
                 },] },

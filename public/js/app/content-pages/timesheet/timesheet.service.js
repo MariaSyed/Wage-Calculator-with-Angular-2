@@ -7,7 +7,7 @@ export var TimesheetService = (function () {
     function TimesheetService(http) {
         this.http = http;
         this.entries = [];
-        this.domain = "http://wage-calculator-v2.herokuapp.com/";
+        this.domain = "https://wage-calculator-v2.herokuapp.com/";
         this.entryIsEdit = new EventEmitter();
     }
     TimesheetService.prototype.getEntries = function () {

@@ -8,7 +8,7 @@ import { Salary } from "./salary.model";
 @Injectable()
 export class SalaryService {
     private salaries: Salary[] = [];
-    private domain: string = "http://wage-calculator-v2.herokuapp.com/";
+    domain = "https://wage-calculator-v2.herokuapp.com/";
 
     constructor(private http: Http) {}
 

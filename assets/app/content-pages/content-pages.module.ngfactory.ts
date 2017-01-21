@@ -9,165 +9,57 @@ import * as import1 from './content-pages.module';
 import * as import2 from '@angular/common/src/common_module';
 import * as import3 from '@angular/forms/src/directives';
 import * as import4 from '@angular/forms/src/form_providers';
-import * as import5 from '@angular/router/src/router_module';
-import * as import6 from '@angular/common/src/localization';
-import * as import7 from '@angular/forms/src/directives/radio_control_value_accessor';
-import * as import8 from '@angular/common/src/location/location';
-import * as import9 from '@angular/router/src/url_tree';
-import * as import10 from '@angular/router/src/router_outlet_map';
-import * as import11 from '@angular/core/src/linker/system_js_ng_module_factory_loader';
-import * as import12 from './timesheet/timesheet.service';
-import * as import13 from './salary/salary.service';
-import * as import14 from '@angular/core/src/di/injector';
-import * as import15 from '../home.component.ngfactory';
-import * as import16 from './timesheet/timesheet.component.ngfactory';
-import * as import17 from './salary/salary.component.ngfactory';
-import * as import18 from '@angular/core/src/i18n/tokens';
-import * as import19 from '@angular/common/src/location/platform_location';
-import * as import20 from '@angular/common/src/location/location_strategy';
-import * as import21 from '@angular/core/src/linker/compiler';
-import * as import22 from '../home.component';
-import * as import23 from './timesheet/timesheet.component';
-import * as import24 from './salary/salary.component';
-import * as import25 from '@angular/core/src/application_ref';
-import * as import26 from '@angular/http/src/http';
-import * as import27 from '@angular/router/src/router';
-import * as import28 from '@angular/core/src/linker/ng_module_factory_loader';
-import * as import29 from '@angular/router/src/router_config_loader';
-import * as import30 from '@angular/router/src/router_state';
-import * as import31 from '@angular/core/src/application_tokens';
+import * as import5 from '@angular/common/src/localization';
+import * as import6 from '@angular/forms/src/directives/radio_control_value_accessor';
+import * as import7 from './timesheet/timesheet.service';
+import * as import8 from './salary/salary.service';
+import * as import9 from '@angular/core/src/di/injector';
+import * as import10 from '@angular/core/src/i18n/tokens';
+import * as import11 from '@angular/http/src/http';
 class ContentPagesModuleInjector extends import0.NgModuleInjector<import1.ContentPagesModule> {
   _CommonModule_0:import2.CommonModule;
   _InternalFormsSharedModule_1:import3.InternalFormsSharedModule;
   _FormsModule_2:import4.FormsModule;
-  _ROUTER_FORROOT_GUARD_3:any;
-  _RouterModule_4:import5.RouterModule;
-  _ContentPagesModule_5:import1.ContentPagesModule;
-  __NgLocalization_6:import6.NgLocaleLocalization;
-  __RadioControlRegistry_7:import7.RadioControlRegistry;
-  __ROUTER_CONFIGURATION_8:any;
-  __LocationStrategy_9:any;
-  __Location_10:import8.Location;
-  __UrlSerializer_11:import9.DefaultUrlSerializer;
-  __RouterOutletMap_12:import10.RouterOutletMap;
-  __NgModuleFactoryLoader_13:import11.SystemJsNgModuleLoader;
-  __ROUTES_14:any[];
-  __Router_15:any;
-  __ActivatedRoute_16:any;
-  __APP_BOOTSTRAP_LISTENER_17:any[];
-  __TimesheetService_18:import12.TimesheetService;
-  __SalaryService_19:import13.SalaryService;
-  constructor(parent:import14.Injector) {
-    super(parent,[
-      import15.HomeComponentNgFactory,
-      import16.TimesheetComponentNgFactory,
-      import17.SalaryComponentNgFactory
-    ]
-    ,[]);
+  _ContentPagesModule_3:import1.ContentPagesModule;
+  __NgLocalization_4:import5.NgLocaleLocalization;
+  __RadioControlRegistry_5:import6.RadioControlRegistry;
+  __TimesheetService_6:import7.TimesheetService;
+  __SalaryService_7:import8.SalaryService;
+  constructor(parent:import9.Injector) {
+    super(parent,[],[]);
   }
-  get _NgLocalization_6():import6.NgLocaleLocalization {
-    if ((this.__NgLocalization_6 == (null as any))) { (this.__NgLocalization_6 = new import6.NgLocaleLocalization(this.parent.get(import18.LOCALE_ID))); }
-    return this.__NgLocalization_6;
+  get _NgLocalization_4():import5.NgLocaleLocalization {
+    if ((this.__NgLocalization_4 == (null as any))) { (this.__NgLocalization_4 = new import5.NgLocaleLocalization(this.parent.get(import10.LOCALE_ID))); }
+    return this.__NgLocalization_4;
   }
-  get _RadioControlRegistry_7():import7.RadioControlRegistry {
-    if ((this.__RadioControlRegistry_7 == (null as any))) { (this.__RadioControlRegistry_7 = new import7.RadioControlRegistry()); }
-    return this.__RadioControlRegistry_7;
+  get _RadioControlRegistry_5():import6.RadioControlRegistry {
+    if ((this.__RadioControlRegistry_5 == (null as any))) { (this.__RadioControlRegistry_5 = new import6.RadioControlRegistry()); }
+    return this.__RadioControlRegistry_5;
   }
-  get _ROUTER_CONFIGURATION_8():any {
-    if ((this.__ROUTER_CONFIGURATION_8 == (null as any))) { (this.__ROUTER_CONFIGURATION_8 = {}); }
-    return this.__ROUTER_CONFIGURATION_8;
+  get _TimesheetService_6():import7.TimesheetService {
+    if ((this.__TimesheetService_6 == (null as any))) { (this.__TimesheetService_6 = new import7.TimesheetService(this.parent.get(import11.Http))); }
+    return this.__TimesheetService_6;
   }
-  get _LocationStrategy_9():any {
-    if ((this.__LocationStrategy_9 == (null as any))) { (this.__LocationStrategy_9 = import5.provideLocationStrategy(this.parent.get(import19.PlatformLocation),this.parent.get(import20.APP_BASE_HREF,(null as any)),this._ROUTER_CONFIGURATION_8)); }
-    return this.__LocationStrategy_9;
-  }
-  get _Location_10():import8.Location {
-    if ((this.__Location_10 == (null as any))) { (this.__Location_10 = new import8.Location(this._LocationStrategy_9)); }
-    return this.__Location_10;
-  }
-  get _UrlSerializer_11():import9.DefaultUrlSerializer {
-    if ((this.__UrlSerializer_11 == (null as any))) { (this.__UrlSerializer_11 = new import9.DefaultUrlSerializer()); }
-    return this.__UrlSerializer_11;
-  }
-  get _RouterOutletMap_12():import10.RouterOutletMap {
-    if ((this.__RouterOutletMap_12 == (null as any))) { (this.__RouterOutletMap_12 = new import10.RouterOutletMap()); }
-    return this.__RouterOutletMap_12;
-  }
-  get _NgModuleFactoryLoader_13():import11.SystemJsNgModuleLoader {
-    if ((this.__NgModuleFactoryLoader_13 == (null as any))) { (this.__NgModuleFactoryLoader_13 = new import11.SystemJsNgModuleLoader(this.parent.get(import21.Compiler),this.parent.get(import11.SystemJsNgModuleLoaderConfig,(null as any)))); }
-    return this.__NgModuleFactoryLoader_13;
-  }
-  get _ROUTES_14():any[] {
-      if ((this.__ROUTES_14 == (null as any))) { (this.__ROUTES_14 = [[
-        {
-          path: '',
-          component: import22.HomeComponent
-        }
-        ,
-        {
-          path: 'timesheet',
-          component: import23.TimesheetComponent
-        }
-        ,
-        {
-          path: 'salaries',
-          component: import24.SalaryComponent
-        }
-
-      ]
-    ]); }
-    return this.__ROUTES_14;
-  }
-  get _Router_15():any {
-    if ((this.__Router_15 == (null as any))) { (this.__Router_15 = import5.setupRouter(this.parent.get(import25.ApplicationRef),this._UrlSerializer_11,this._RouterOutletMap_12,this._Location_10,this,this._NgModuleFactoryLoader_13,this.parent.get(import21.Compiler),this._ROUTES_14,this._ROUTER_CONFIGURATION_8)); }
-    return this.__Router_15;
-  }
-  get _ActivatedRoute_16():any {
-    if ((this.__ActivatedRoute_16 == (null as any))) { (this.__ActivatedRoute_16 = import5.rootRoute(this._Router_15)); }
-    return this.__ActivatedRoute_16;
-  }
-  get _APP_BOOTSTRAP_LISTENER_17():any[] {
-    if ((this.__APP_BOOTSTRAP_LISTENER_17 == (null as any))) { (this.__APP_BOOTSTRAP_LISTENER_17 = [import5.initialRouterNavigation(this._Router_15,this._ROUTER_CONFIGURATION_8)]); }
-    return this.__APP_BOOTSTRAP_LISTENER_17;
-  }
-  get _TimesheetService_18():import12.TimesheetService {
-    if ((this.__TimesheetService_18 == (null as any))) { (this.__TimesheetService_18 = new import12.TimesheetService(this.parent.get(import26.Http))); }
-    return this.__TimesheetService_18;
-  }
-  get _SalaryService_19():import13.SalaryService {
-    if ((this.__SalaryService_19 == (null as any))) { (this.__SalaryService_19 = new import13.SalaryService(this.parent.get(import26.Http))); }
-    return this.__SalaryService_19;
+  get _SalaryService_7():import8.SalaryService {
+    if ((this.__SalaryService_7 == (null as any))) { (this.__SalaryService_7 = new import8.SalaryService(this.parent.get(import11.Http))); }
+    return this.__SalaryService_7;
   }
   createInternal():import1.ContentPagesModule {
     this._CommonModule_0 = new import2.CommonModule();
     this._InternalFormsSharedModule_1 = new import3.InternalFormsSharedModule();
     this._FormsModule_2 = new import4.FormsModule();
-    this._ROUTER_FORROOT_GUARD_3 = import5.provideForRootGuard(this.parent.get(import27.Router,(null as any)));
-    this._RouterModule_4 = new import5.RouterModule(this._ROUTER_FORROOT_GUARD_3);
-    this._ContentPagesModule_5 = new import1.ContentPagesModule();
-    return this._ContentPagesModule_5;
+    this._ContentPagesModule_3 = new import1.ContentPagesModule();
+    return this._ContentPagesModule_3;
   }
   getInternal(token:any,notFoundResult:any):any {
     if ((token === import2.CommonModule)) { return this._CommonModule_0; }
     if ((token === import3.InternalFormsSharedModule)) { return this._InternalFormsSharedModule_1; }
     if ((token === import4.FormsModule)) { return this._FormsModule_2; }
-    if ((token === import5.ROUTER_FORROOT_GUARD)) { return this._ROUTER_FORROOT_GUARD_3; }
-    if ((token === import5.RouterModule)) { return this._RouterModule_4; }
-    if ((token === import1.ContentPagesModule)) { return this._ContentPagesModule_5; }
-    if ((token === import6.NgLocalization)) { return this._NgLocalization_6; }
-    if ((token === import7.RadioControlRegistry)) { return this._RadioControlRegistry_7; }
-    if ((token === import5.ROUTER_CONFIGURATION)) { return this._ROUTER_CONFIGURATION_8; }
-    if ((token === import20.LocationStrategy)) { return this._LocationStrategy_9; }
-    if ((token === import8.Location)) { return this._Location_10; }
-    if ((token === import9.UrlSerializer)) { return this._UrlSerializer_11; }
-    if ((token === import10.RouterOutletMap)) { return this._RouterOutletMap_12; }
-    if ((token === import28.NgModuleFactoryLoader)) { return this._NgModuleFactoryLoader_13; }
-    if ((token === import29.ROUTES)) { return this._ROUTES_14; }
-    if ((token === import27.Router)) { return this._Router_15; }
-    if ((token === import30.ActivatedRoute)) { return this._ActivatedRoute_16; }
-    if ((token === import31.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_17; }
-    if ((token === import12.TimesheetService)) { return this._TimesheetService_18; }
-    if ((token === import13.SalaryService)) { return this._SalaryService_19; }
+    if ((token === import1.ContentPagesModule)) { return this._ContentPagesModule_3; }
+    if ((token === import5.NgLocalization)) { return this._NgLocalization_4; }
+    if ((token === import6.RadioControlRegistry)) { return this._RadioControlRegistry_5; }
+    if ((token === import7.TimesheetService)) { return this._TimesheetService_6; }
+    if ((token === import8.SalaryService)) { return this._SalaryService_7; }
     return notFoundResult;
   }
   destroyInternal():void {
