@@ -68,7 +68,6 @@ router.post("/",function(req, res, next){
 
 //UPDATE DATA
 router.patch("/:id", function(req, res, next){
-    console.log("reached inside patch request");
     Entry.findById(req.params.id, function (err, entry) {
         if (err) {
             return res.status(500).json({
@@ -90,8 +89,6 @@ router.patch("/:id", function(req, res, next){
 
         //Calculating daily wage for updated entry
         entry.dailyWage = calculate.calculateDailyWage(entry);
-        console.log('here is updated entry:');
-        console.log(entry);
         entry.save(function(err, result) {
             if (err) {
                 return res.status(500).json({

@@ -3,7 +3,7 @@ var express = require('express'),
     Entry = require('../models/entry'),
     Salary = require('../models/salary');
 
-//show salaries
+//SHOW SALARIES
 router.get("/", function(req, res){
     Salary.find()
       .exec(function(err, salaries){
@@ -20,7 +20,7 @@ router.get("/", function(req, res){
     })
 });
 
-//process salaries
+//PROCESS SALARIES
 router.post("/", function(req, res){
     Entry.aggregate( [
       { $group : { _id : "$id", id : { $first: "$id" },name : { $first: "$name" }, salary: { $sum: "$dailyWage" } } },
