@@ -2,7 +2,7 @@
 
 Application to calculate employee salaries for the month using data from a csv file. Entries can also be added, uploaded and deleted.  
 
-## How to Use (Un-deployed Version)
+## How to Use (Development Version)
 ### Install Mongodb
 * Download installation files from: https://docs.mongodb.com/manual/administration/install-community/
 * Install in root directory
@@ -14,11 +14,18 @@ https://nodejs.org/en/download/
 1. Navigate into the folder (in the command line/ terminal)
 2. Run `npm install` to install all required dependencies
 3. Run `npm run build` to run the development build script => Keep this process running! It recompiles the files upon changes.
-4. Run `./bin/mongod` to start mongodb server => Keep this process running too. It is the mongo server.
+4. Run `./bin/mongod` to start mongodb server (or run mongod.exe file)=> Keep this process running too. It is the mongo server.
 5. Run `npm start` in a new command line/ terminal window => Keep this process running as well. It is the Nodejs server.
 
 ### Use Application
 Go to: http://localhost:3000
+
+## How to Use (Deployed Version)
+* Go to: https://wage-calculator-v2.herokuapp.com/
+* Click on 'See Timesheet' to view timesheet
+* Add, Update, Delete, Refresh by using their respective buttons
+* Click 'See Salaries' to view salaries
+* Click 'Calculate' to calculate new salaries based on current timesheet
 
 ## What Was Used
 
@@ -32,7 +39,7 @@ Go to: http://localhost:3000
 
 #### Back-end
 * **MEAN Stack**
-    * MongoDB to store data
+    * MongoDB to store data (MongoLab to access database on deployed version)
     * Express framework
     * Nodejs as back-end programming language
 * **Important Libraries**
@@ -46,7 +53,7 @@ Go to: http://localhost:3000
 
 * Data is read from "HourList201403.csv" and is used to populate database on mongoDB.     
 
-* After data is read, daily wage for each entry is calculated and added as a new field to each entry which can be viewed at https://localhost:3000/timesheet
+* After data is read, daily wage for each entry is calculated and added as a new field to each entry which can be viewed at '/timesheet'
 
 * New entries can be added to collection by filling in the form on the page.  
 (*Note: data must be of certain format to be added successfully*)
