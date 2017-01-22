@@ -2,12 +2,14 @@ import { Http } from "@angular/http";
 import { Injectable } from "@angular/core";
 import 'rxjs/Rx';
 import { Observable } from "rxjs";
+import { WindowRef } from '../../WindowRef';
 import { Salary } from "./salary.model";
 export var SalaryService = (function () {
-    function SalaryService(http) {
+    function SalaryService(http, winRef) {
         this.http = http;
+        this.winRef = winRef;
         this.salaries = [];
-        this.domain = "https://wage-calculator-v2.herokuapp.com/";
+        this.domain = winRef.domain + "/";
     }
     SalaryService.prototype.getSalaries = function () {
         var _this = this;
@@ -41,6 +43,7 @@ export var SalaryService = (function () {
     /** @nocollapse */
     SalaryService.ctorParameters = [
         { type: Http, },
+        { type: WindowRef, },
     ];
     return SalaryService;
 }());

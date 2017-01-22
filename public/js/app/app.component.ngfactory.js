@@ -16,13 +16,14 @@ import * as import5 from './content-pages/salary/salary.service';
 import * as import8 from '@angular/core/src/linker/view_type';
 import * as import9 from '@angular/core/src/change_detection/change_detection';
 import * as import10 from '@angular/http/src/http';
-import * as import11 from '@angular/core/src/metadata/view';
-import * as import12 from '@angular/core/src/linker/component_factory';
-import * as import13 from './header.component';
-import * as import14 from '@angular/router/src/directives/router_outlet';
-import * as import15 from './header.component.ngfactory';
-import * as import16 from '@angular/router/src/router_outlet_map';
-import * as import17 from '@angular/core/src/linker/component_factory_resolver';
+import * as import11 from './WindowRef';
+import * as import12 from '@angular/core/src/metadata/view';
+import * as import13 from '@angular/core/src/linker/component_factory';
+import * as import14 from './header.component';
+import * as import15 from '@angular/router/src/directives/router_outlet';
+import * as import16 from './header.component.ngfactory';
+import * as import17 from '@angular/router/src/router_outlet_map';
+import * as import18 from '@angular/core/src/linker/component_factory_resolver';
 var renderType_AppComponent_Host = null;
 var _View_AppComponent_Host0 = (function (_super) {
     __extends(_View_AppComponent_Host0, _super);
@@ -32,7 +33,7 @@ var _View_AppComponent_Host0 = (function (_super) {
     Object.defineProperty(_View_AppComponent_Host0.prototype, "_TimesheetService_0_5", {
         get: function () {
             if ((this.__TimesheetService_0_5 == null)) {
-                (this.__TimesheetService_0_5 = new import4.TimesheetService(this.parentInjector.get(import10.Http)));
+                (this.__TimesheetService_0_5 = new import4.TimesheetService(this.parentInjector.get(import10.Http), this.parentInjector.get(import11.WindowRef)));
             }
             return this.__TimesheetService_0_5;
         },
@@ -42,7 +43,7 @@ var _View_AppComponent_Host0 = (function (_super) {
     Object.defineProperty(_View_AppComponent_Host0.prototype, "_SalaryService_0_6", {
         get: function () {
             if ((this.__SalaryService_0_6 == null)) {
-                (this.__SalaryService_0_6 = new import5.SalaryService(this.parentInjector.get(import10.Http)));
+                (this.__SalaryService_0_6 = new import5.SalaryService(this.parentInjector.get(import10.Http), this.parentInjector.get(import11.WindowRef)));
             }
             return this.__SalaryService_0_6;
         },
@@ -75,11 +76,11 @@ var _View_AppComponent_Host0 = (function (_super) {
 }(import1.AppView));
 function viewFactory_AppComponent_Host0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_AppComponent_Host === null)) {
-        (renderType_AppComponent_Host = viewUtils.createRenderComponentType('', 0, import11.ViewEncapsulation.None, [], {}));
+        (renderType_AppComponent_Host = viewUtils.createRenderComponentType('', 0, import12.ViewEncapsulation.None, [], {}));
     }
     return new _View_AppComponent_Host0(viewUtils, parentInjector, declarationEl);
 }
-export var AppComponentNgFactory = new import12.ComponentFactory('wc-app', viewFactory_AppComponent_Host0, import3.AppComponent);
+export var AppComponentNgFactory = new import13.ComponentFactory('wc-app', viewFactory_AppComponent_Host0, import3.AppComponent);
 var styles_AppComponent = [];
 var renderType_AppComponent = null;
 var _View_AppComponent0 = (function (_super) {
@@ -91,14 +92,14 @@ var _View_AppComponent0 = (function (_super) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
         this._el_0 = this.renderer.createElement(parentRenderNode, 'wc-header', null);
         this._appEl_0 = new import2.AppElement(0, null, this, this._el_0);
-        var compView_0 = import15.viewFactory_HeaderComponent0(this.viewUtils, this.injector(0), this._appEl_0);
-        this._HeaderComponent_0_4 = new import13.HeaderComponent();
+        var compView_0 = import16.viewFactory_HeaderComponent0(this.viewUtils, this.injector(0), this._appEl_0);
+        this._HeaderComponent_0_4 = new import14.HeaderComponent();
         this._appEl_0.initComponent(this._HeaderComponent_0_4, [], compView_0);
         compView_0.create(this._HeaderComponent_0_4, [], null);
         this._text_1 = this.renderer.createText(parentRenderNode, '\n', null);
         this._el_2 = this.renderer.createElement(parentRenderNode, 'router-outlet', null);
         this._appEl_2 = new import2.AppElement(2, null, this, this._el_2);
-        this._RouterOutlet_2_5 = new import14.RouterOutlet(this.parentInjector.get(import16.RouterOutletMap), this._appEl_2.vcRef, this.parentInjector.get(import17.ComponentFactoryResolver), null);
+        this._RouterOutlet_2_5 = new import15.RouterOutlet(this.parentInjector.get(import17.RouterOutletMap), this._appEl_2.vcRef, this.parentInjector.get(import18.ComponentFactoryResolver), null);
         this._text_3 = this.renderer.createText(parentRenderNode, '\n', null);
         this.init([], [
             this._el_0,
@@ -109,10 +110,10 @@ var _View_AppComponent0 = (function (_super) {
         return null;
     };
     _View_AppComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import13.HeaderComponent) && (0 === requestNodeIndex))) {
+        if (((token === import14.HeaderComponent) && (0 === requestNodeIndex))) {
             return this._HeaderComponent_0_4;
         }
-        if (((token === import14.RouterOutlet) && (2 === requestNodeIndex))) {
+        if (((token === import15.RouterOutlet) && (2 === requestNodeIndex))) {
             return this._RouterOutlet_2_5;
         }
         return notFoundResult;
@@ -124,7 +125,7 @@ var _View_AppComponent0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_AppComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_AppComponent === null)) {
-        (renderType_AppComponent = viewUtils.createRenderComponentType('C:/Users/Maria_2/Documents/WageCalulator/wc-from-scratch/assets/app/app.component.html', 0, import11.ViewEncapsulation.None, styles_AppComponent, {}));
+        (renderType_AppComponent = viewUtils.createRenderComponentType('C:/Users/Maria_2/Documents/WageCalulator/wc-from-scratch/assets/app/app.component.html', 0, import12.ViewEncapsulation.None, styles_AppComponent, {}));
     }
     return new _View_AppComponent0(viewUtils, parentInjector, declarationEl);
 }

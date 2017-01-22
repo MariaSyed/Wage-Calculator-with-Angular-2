@@ -2,15 +2,18 @@ import { Http, Response, Headers } from "@angular/http";
 import { Injectable, EventEmitter } from "@angular/core";
 import 'rxjs/Rx';
 import { Observable } from "rxjs";
+import {WindowRef} from '../../WindowRef';
 
 import { Salary } from "./salary.model";
 
 @Injectable()
 export class SalaryService {
     private salaries: Salary[] = [];
-    domain = "https://wage-calculator-v2.herokuapp.com/"; //"http://localhost:3000/";
+    domain: string;
 
-    constructor(private http: Http) {}
+    constructor(private http: Http, private winRef: WindowRef) {
+      this.domain = winRef.domain + "/";
+    }
 
     getSalaries() {
         // return this.salaries;

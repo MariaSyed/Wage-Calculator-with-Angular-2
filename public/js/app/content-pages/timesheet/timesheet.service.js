@@ -2,13 +2,15 @@ import { Http, Headers } from "@angular/http";
 import { Injectable, EventEmitter } from "@angular/core";
 import 'rxjs/Rx';
 import { Observable } from "rxjs";
+import { WindowRef } from '../../WindowRef';
 import { Entry } from "./entry.model";
 export var TimesheetService = (function () {
-    function TimesheetService(http) {
+    function TimesheetService(http, winRef) {
         this.http = http;
+        this.winRef = winRef;
         this.entries = [];
-        this.domain = "https://wage-calculator-v2.herokuapp.com/";
         this.entryIsEdit = new EventEmitter();
+        this.domain = winRef.domain + "/";
     }
     TimesheetService.prototype.getEntries = function () {
         var _this = this;
@@ -75,6 +77,7 @@ export var TimesheetService = (function () {
     /** @nocollapse */
     TimesheetService.ctorParameters = [
         { type: Http, },
+        { type: WindowRef, },
     ];
     return TimesheetService;
 }());

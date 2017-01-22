@@ -2,16 +2,19 @@ import { Http, Response, Headers } from "@angular/http";
 import { Injectable, EventEmitter } from "@angular/core";
 import 'rxjs/Rx';
 import { Observable } from "rxjs";
+import {WindowRef} from '../../WindowRef';
 
 import { Entry } from "./entry.model";
 
 @Injectable()
 export class TimesheetService {
     private entries: Entry[] = [];
-    domain = "https://wage-calculator-v2.herokuapp.com/"; //"http://localhost:3000/";
+    domain: string;
     entryIsEdit = new EventEmitter<Entry>();
 
-    constructor(private http: Http) {}
+    constructor(private http: Http, private winRef: WindowRef) {
+      this.domain = winRef.domain + "/";
+    }
 
     getEntries() {
      return this.http.get(this.domain + 'timesheet-entry')

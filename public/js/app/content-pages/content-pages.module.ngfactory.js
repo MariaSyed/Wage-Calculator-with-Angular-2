@@ -19,6 +19,7 @@ import * as import7 from './timesheet/timesheet.service';
 import * as import8 from './salary/salary.service';
 import * as import10 from '@angular/core/src/i18n/tokens';
 import * as import11 from '@angular/http/src/http';
+import * as import12 from '../WindowRef';
 var ContentPagesModuleInjector = (function (_super) {
     __extends(ContentPagesModuleInjector, _super);
     function ContentPagesModuleInjector(parent) {
@@ -47,7 +48,7 @@ var ContentPagesModuleInjector = (function (_super) {
     Object.defineProperty(ContentPagesModuleInjector.prototype, "_TimesheetService_6", {
         get: function () {
             if ((this.__TimesheetService_6 == null)) {
-                (this.__TimesheetService_6 = new import7.TimesheetService(this.parent.get(import11.Http)));
+                (this.__TimesheetService_6 = new import7.TimesheetService(this.parent.get(import11.Http), this.parent.get(import12.WindowRef)));
             }
             return this.__TimesheetService_6;
         },
@@ -57,7 +58,7 @@ var ContentPagesModuleInjector = (function (_super) {
     Object.defineProperty(ContentPagesModuleInjector.prototype, "_SalaryService_7", {
         get: function () {
             if ((this.__SalaryService_7 == null)) {
-                (this.__SalaryService_7 = new import8.SalaryService(this.parent.get(import11.Http)));
+                (this.__SalaryService_7 = new import8.SalaryService(this.parent.get(import11.Http), this.parent.get(import12.WindowRef)));
             }
             return this.__SalaryService_7;
         },

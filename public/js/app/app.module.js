@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { routing } from "./app.routing";
+import { WindowRef } from './WindowRef';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { HomeComponent } from './home.component';
@@ -22,7 +23,7 @@ export var AppModule = (function () {
                         routing,
                         ContentPagesModule
                     ],
-                    providers: [],
+                    providers: [WindowRef],
                     bootstrap: [AppComponent]
                 },] },
     ];

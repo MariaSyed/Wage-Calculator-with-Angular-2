@@ -16,6 +16,7 @@ import * as import8 from './salary/salary.service';
 import * as import9 from '@angular/core/src/di/injector';
 import * as import10 from '@angular/core/src/i18n/tokens';
 import * as import11 from '@angular/http/src/http';
+import * as import12 from '../WindowRef';
 class ContentPagesModuleInjector extends import0.NgModuleInjector<import1.ContentPagesModule> {
   _CommonModule_0:import2.CommonModule;
   _InternalFormsSharedModule_1:import3.InternalFormsSharedModule;
@@ -37,11 +38,11 @@ class ContentPagesModuleInjector extends import0.NgModuleInjector<import1.Conten
     return this.__RadioControlRegistry_5;
   }
   get _TimesheetService_6():import7.TimesheetService {
-    if ((this.__TimesheetService_6 == (null as any))) { (this.__TimesheetService_6 = new import7.TimesheetService(this.parent.get(import11.Http))); }
+    if ((this.__TimesheetService_6 == (null as any))) { (this.__TimesheetService_6 = new import7.TimesheetService(this.parent.get(import11.Http),this.parent.get(import12.WindowRef))); }
     return this.__TimesheetService_6;
   }
   get _SalaryService_7():import8.SalaryService {
-    if ((this.__SalaryService_7 == (null as any))) { (this.__SalaryService_7 = new import8.SalaryService(this.parent.get(import11.Http))); }
+    if ((this.__SalaryService_7 == (null as any))) { (this.__SalaryService_7 = new import8.SalaryService(this.parent.get(import11.Http),this.parent.get(import12.WindowRef))); }
     return this.__SalaryService_7;
   }
   createInternal():import1.ContentPagesModule {
