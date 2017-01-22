@@ -26,7 +26,7 @@ router.get("/", function(req, res, next){
 //REFRESH DATA
 router.post("/refresh", function(req, res, next){
   //Removing all data and re-populating database from csv file
-  refreshDB("HourList201403.csv", function(err, entries){
+  refreshDB("files/HourList201403.csv", function(err, entries){
     if (err) {
         return res.json({
             title: 'An error occurred',
